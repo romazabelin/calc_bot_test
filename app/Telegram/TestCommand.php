@@ -27,7 +27,8 @@ class TestCommand extends Command
      */
     public function handle($arguments)
     {
-        $this->replyWithMessage('sssss');
+        $update = $this->getUpdate();
+        $this->replyWithMessage(['text' => 'ssss']);
 //        $commands = $this->telegram->getCommands();
 //
 //        $text = '';
