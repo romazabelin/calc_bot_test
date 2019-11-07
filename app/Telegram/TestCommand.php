@@ -36,20 +36,29 @@ class TestCommand extends Command
             ['0']
         ];
 
+        $keyboard = Keyboard::make()
+            ->inline()
+            ->row(
+                Keyboard::inlineButton(['text' => 'Test', 'callback_data' => 'data']),
+                Keyboard::inlineButton(['text' => 'Btn 2', 'callback_data' => 'data_from_btn2'])
+            );
+
+        $this->replyWithMessage(['text' => 'Start command', 'reply_markup' => $keyboard]);
+
 //        $replyMarkup = Key::replyKeyboardMarkup([
 //            'keyboard' => $keyboard,
 //            'resize_keyboard' => true,
 //            'one_time_keyboard' => false
 //        ]);
 
-        $replyMarkup = Keyboard::inlineButton([
-            'text' => 'ssss'
-        ]);
-
-        $this->replyWithMessage([
-            'text' => 'Hello World',
-            'reply_markup' => $replyMarkup
-        ]);
+//        $replyMarkup = Keyboard::inlineButton([
+//            'text' => 'ssss'
+//        ]);
+//
+//        $this->replyWithMessage([
+//            'text' => 'Hello World',
+//            'reply_markup' => $replyMarkup
+//        ]);
 
         //        $update = $this->getUpdate();
 //        $commands = $this->telegram->getCommands();
