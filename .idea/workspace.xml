@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path="calculator_bot.iws" />
@@ -47,7 +46,7 @@
       <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="36" selection-start="665" selection-end="665" vertical-scroll-proportion="0.6570605" vertical-offset="129" max-vertical-offset="578">
+            <state line="21" column="38" selection-start="667" selection-end="667" vertical-scroll-proportion="0.6570605" vertical-offset="129" max-vertical-offset="578">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
               </folding>
@@ -490,7 +489,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="36" selection-start="665" selection-end="665" vertical-scroll-proportion="0.6570605" vertical-offset="129" max-vertical-offset="578">
+        <state line="21" column="38" selection-start="667" selection-end="667" vertical-scroll-proportion="0.6570605" vertical-offset="129" max-vertical-offset="578">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
           </folding>
