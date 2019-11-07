@@ -14,16 +14,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//$updates = Telegram::getWebhookUpdates();
-
-// Example of POST Route:
-//Route::post('/703953909:AAGNrH2u0s2W-90di4gvwqDh-ATP7YR-mEc/webhook', function () {
-//    $updates = Telegram::getWebhookUpdates();
-//
-//    return 'ok';
-//});
-
-Route::post('/<975643316:AAF2bLrUzkNaUstjZZhcSzR5JzqFH8IpKas>/webhook', function () {
+$updates = Telegram::getWebhookUpdates();
+Route::post('/975643316:AAF2bLrUzkNaUstjZZhcSzR5JzqFH8IpKas/webhook', function () {
     Telegram::commandsHandler(true);
 });
 
