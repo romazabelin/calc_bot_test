@@ -68,10 +68,9 @@
       <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="5" selection-start="736" selection-end="736" vertical-scroll-proportion="0.76334107" vertical-offset="96" max-vertical-offset="527">
+            <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.44779584" vertical-offset="62" max-vertical-offset="544">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
-                <marker date="1573123339691" expanded="true" signature="453:546" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -418,10 +417,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="5" selection-start="736" selection-end="736" vertical-scroll-proportion="0.76334107" vertical-offset="96" max-vertical-offset="527">
+        <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.44779584" vertical-offset="62" max-vertical-offset="544">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
-            <marker date="1573123339691" expanded="true" signature="453:546" placeholder="..." />
           </folding>
         </state>
       </provider>
