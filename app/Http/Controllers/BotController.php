@@ -9,7 +9,6 @@ class BotController extends Controller
 {
     public function webhookHandler()
     {
-        return 'ok';
 //        $update = Telegram::getWebhookUpdates();
 //        $query = $update->getCallbackQuery();
 //
