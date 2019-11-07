@@ -15,9 +15,6 @@ Route::get('/', function () {
 });
 
 //$updates = Telegram::getWebhookUpdates();
-//Route::post('/975643316:AAF2bLrUzkNaUstjZZhcSzR5JzqFH8IpKas/webhook', function () {
-//    Telegram::commandsHandler(true);
-//});
 
 Route::post('/webhook', function () {
     Telegram::commandsHandler(true);
