@@ -28,7 +28,7 @@ Route::post(Telegram::getAccessToken(), function () {
     Telegram::commandsHandler(true);
 });
 
-//$response = Telegram::getMe();
+$response = Telegram::getMe();
 //
 //echo $botId = $response->getId();
 //$firstName = $response->getFirstName();
