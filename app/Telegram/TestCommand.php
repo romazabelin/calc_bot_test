@@ -29,47 +29,15 @@ class TestCommand extends Command
      */
     public function handle($arguments)
     {
-        $keyboard = [
-            ['7', '8', '9'],
-            ['4', '5', '6'],
-            ['1', '2', '3'],
-            ['0']
-        ];
-
-//        $keyboard = Keyboard::make()
-//            ->inline()
-//            ->row(
-//                Keyboard::inlineButton(['text' => 'Test', 'callback_data' => 'data']),
-//                Keyboard::inlineButton(['text' => 'Btn 2', 'callback_data' => 'data_from_btn2'])
-//            );
-
-        $inlineLayout = [
-            [
+        $keyboard = Keyboard::make()
+            ->inline()
+            ->row(
                 Keyboard::inlineButton(['text' => 'Test', 'callback_data' => 'data']),
                 Keyboard::inlineButton(['text' => 'Btn 2', 'callback_data' => 'data_from_btn2'])
-            ]
-        ];
+            );
 
-        $keyboard = Telegram::replyKeyboardMarkup([
-            'inline_keyboard' => $inlineLayout
-        ]);
 
         $this->replyWithMessage(['text' => 'Start command', 'reply_markup' => $keyboard]);
-
-//        $replyMarkup = Key::replyKeyboardMarkup([
-//            'keyboard' => $keyboard,
-//            'resize_keyboard' => true,
-//            'one_time_keyboard' => false
-//        ]);
-
-//        $replyMarkup = Keyboard::inlineButton([
-//            'text' => 'ssss'
-//        ]);
-//
-//        $this->replyWithMessage([
-//            'text' => 'Hello World',
-//            'reply_markup' => $replyMarkup
-//        ]);
 
         //        $update = $this->getUpdate();
 //        $commands = $this->telegram->getCommands();
