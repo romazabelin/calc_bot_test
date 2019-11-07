@@ -27,13 +27,14 @@ class TestCommand extends Command
      */
     public function handle($arguments)
     {
-        $commands = $this->telegram->getCommands();
-
-        $text = '';
-        foreach ($commands as $name => $handler) {
-            $text .= sprintf('/%s - %s'.PHP_EOL, $name, $handler->getDescription());
-        }
-
-        $this->replyWithMessage(compact('text'));
+        $this->replyWithMessage('sssss');
+//        $commands = $this->telegram->getCommands();
+//
+//        $text = '';
+//        foreach ($commands as $name => $handler) {
+//            $text .= sprintf('/%s - %s'.PHP_EOL, $name, $handler->getDescription());
+//        }
+//
+//        $this->replyWithMessage(compact('text'));
     }
 }
