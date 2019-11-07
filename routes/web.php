@@ -19,7 +19,7 @@ Route::post('/975643316:AAF2bLrUzkNaUstjZZhcSzR5JzqFH8IpKas/webhook', function (
     Telegram::commandsHandler(true);
 });
 
-$response = Telegram::getMe();
-echo $botId = $response->getId();
+//$response = Telegram::getMe();
+//echo $botId = $response->getId();
 //$firstName = $response->getFirstName();
 //$username = $response->getUsername();

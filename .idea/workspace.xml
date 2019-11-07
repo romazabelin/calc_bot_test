@@ -46,7 +46,7 @@
       <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.72389793" vertical-offset="79" max-vertical-offset="510">
+            <state line="23" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="0.72389793" vertical-offset="79" max-vertical-offset="510">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
               </folding>
@@ -484,7 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.72389793" vertical-offset="79" max-vertical-offset="510">
+        <state line="23" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="0.72389793" vertical-offset="79" max-vertical-offset="510">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
           </folding>
