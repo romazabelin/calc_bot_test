@@ -38,9 +38,9 @@ class TestCommand extends Command
         $replyMarkup = Telegram::replyKeyboardMarkup([
             'keyboard' => $keyboard,
             'resize_keyboard' => true,
-            'one_time_keyboard' => true
+            'one_time_keyboard' => false
         ]);
-        
+
         $this->replyWithMessage([
             'text' => 'Hello World',
             'reply_markup' => $replyMarkup
