@@ -23,7 +23,7 @@ Route::get('/', function () {
 //    return 'ok';
 //});
 
-Route::post('/975643316:AAF2bLrUzkNaUstjZZhcSzR5JzqFH8IpKas/webhook', function () {
+Route::post('/<975643316:AAF2bLrUzkNaUstjZZhcSzR5JzqFH8IpKas>/webhook', function () {
     Telegram::commandsHandler(true);
 });
 

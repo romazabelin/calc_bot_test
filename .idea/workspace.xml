@@ -38,25 +38,25 @@
       <file leaf-file-name="telegram.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/telegram.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="95" selection-start="1673" selection-end="1718" vertical-scroll-proportion="-8.5" vertical-offset="510" max-vertical-offset="3485">
+            <state line="43" column="95" selection-start="1673" selection-end="1718" vertical-scroll-proportion="40.53846" vertical-offset="1785" max-vertical-offset="3485">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="64" selection-start="550" selection-end="550" vertical-scroll-proportion="-11.423077" vertical-offset="60" max-vertical-offset="510">
+            <state line="22" column="57" selection-start="543" selection-end="543" vertical-scroll-proportion="0.68909514" vertical-offset="60" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="web.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="59" selection-start="746" selection-end="746" vertical-scroll-proportion="0.52668214" vertical-offset="198" max-vertical-offset="646">
+            <state line="25" column="61" selection-start="701" selection-end="748" vertical-scroll-proportion="-8.076923" vertical-offset="215" max-vertical-offset="646">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
               </folding>
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/telegram.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
       </list>
     </option>
   </component>
@@ -471,24 +471,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/telegram.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="95" selection-start="1673" selection-end="1718" vertical-scroll-proportion="-8.5" vertical-offset="510" max-vertical-offset="3485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="64" selection-start="550" selection-end="550" vertical-scroll-proportion="-11.423077" vertical-offset="60" max-vertical-offset="510">
+        <state line="43" column="95" selection-start="1673" selection-end="1718" vertical-scroll-proportion="40.53846" vertical-offset="1785" max-vertical-offset="3485">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="59" selection-start="746" selection-end="746" vertical-scroll-proportion="0.52668214" vertical-offset="198" max-vertical-offset="646">
+        <state line="25" column="61" selection-start="701" selection-end="748" vertical-scroll-proportion="-8.076923" vertical-offset="215" max-vertical-offset="646">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="57" selection-start="543" selection-end="543" vertical-scroll-proportion="0.68909514" vertical-offset="60" max-vertical-offset="510">
+          <folding />
         </state>
       </provider>
     </entry>
