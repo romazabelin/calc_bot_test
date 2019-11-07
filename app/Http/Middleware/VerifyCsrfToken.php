@@ -20,6 +20,6 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'webhook/*'
+        '703953909:*'
     ];
 }
