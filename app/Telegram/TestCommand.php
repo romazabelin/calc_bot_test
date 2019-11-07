@@ -29,6 +29,8 @@ class TestCommand extends Command
      */
     public function handle($arguments)
     {
+        $update = $this->getWebhookUpdates();
+
         $keyboard = Keyboard::make()
             ->inline()
             ->row(
@@ -37,8 +39,8 @@ class TestCommand extends Command
             );
 
 
-        Telegram::sendMessage(['text' => 'ssst command', 'reply_markup' => $keyboard]);
-        //$this->replyWithMessage();
+//        Telegram::sendMessage(['text' => 'ssst command', 'reply_markup' => $keyboard, 'chat_id' => $update->getCallbackQuery()->getMessage()->getChat()]);
+        $this->replyWithMessage(['text' => 'ssst command', 'reply_markup' => $keyboard]);
 
         //        $update = $this->getUpdate();
 //        $commands = $this->telegram->getCommands();

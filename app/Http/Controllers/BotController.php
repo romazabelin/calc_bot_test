@@ -21,16 +21,16 @@ class BotController extends Controller
 //            ]);
 //        }
 
-//        $update = Telegram::getWebhookUpdates();
-//        $query = $update->getCallbackQuery();
-//
-//        if ($query->getId()) {
-//            Telegram::answerCallbackQuery([
-//                'text' => $query->getData(),
-//                'callback_query_id' => $query->getId(),
-//                'show_alert' => true
-//            ]);
-//        }
+        $update = Telegram::getWebhookUpdates();
+        $query = $update->getCallbackQuery();
+
+        if ($query->getId()) {
+            Telegram::answerCallbackQuery([
+                'text' => $query->getData(),
+                'callback_query_id' => $query->getId(),
+                'show_alert' => true
+            ]);
+        }
 
         Telegram::commandsHandler(true);
     }
