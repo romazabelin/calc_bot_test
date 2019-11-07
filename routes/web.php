@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +12,8 @@
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::post(Telegram::getAccessToken(), function() {
+    Telegram::commandsHandler(true);
 });
