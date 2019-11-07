@@ -14,8 +14,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//$updates = Telegram::getWebhookUpdates();
-
 Route::post('/webhook', 'BotController@webhookHandler');
 
 //$response = Telegram::getMe();

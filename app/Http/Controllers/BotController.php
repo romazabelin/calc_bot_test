@@ -9,7 +9,7 @@ class BotController extends Controller
 {
     public function webhookHandler()
     {
-//        $updates = Telegram::getWebhookUpdates();
+        $updates = Telegram::getWebhookUpdates();
         Telegram::commandsHandler(true);
     }
 }
