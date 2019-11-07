@@ -29,10 +29,6 @@ class TestCommand extends Command
      */
     public function handle($arguments)
     {
-
-        $update = $this->getUpdate();
-        $callback_query = $update['callback_query'];
-
         $keyboard = Keyboard::make()
             ->inline()
             ->row(
@@ -40,12 +36,8 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => 'Btn 2', 'callback_data' => 'data_from_btn2'])
             );
 
-        if ($callback_query) {
-            $this->replyWithMessage(['text' => 'Bla', 'reply_markup' => $keyboard]);
-        } else {
-            $this->replyWithMessage(['text' => 'Start command', 'reply_markup' => $keyboard]);
-        }
 
+        $this->replyWithMessage(['text' => 'Start command', 'reply_markup' => $keyboard]);
 
         //        $update = $this->getUpdate();
 //        $commands = $this->telegram->getCommands();
