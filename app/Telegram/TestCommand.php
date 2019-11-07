@@ -29,6 +29,10 @@ class TestCommand extends Command
      */
     public function handle($arguments)
     {
+
+        $update = Telegram::getWebhookUpdates();
+        $query = $update->getCallbackQuery();
+
         $keyboard = Keyboard::make()
             ->inline()
             ->row(
@@ -36,8 +40,12 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => 'Btn 2', 'callback_data' => 'data_from_btn2'])
             );
 
+        if ($query->getId()) {
+            $this->replyWithMessage(['text' => 'Bla', 'reply_markup' => $keyboard]);
+        } else {
+            $this->replyWithMessage(['text' => 'Start command', 'reply_markup' => $keyboard]);
+        }
 
-        $this->replyWithMessage(['text' => 'Start command', 'reply_markup' => $keyboard]);
 
         //        $update = $this->getUpdate();
 //        $commands = $this->telegram->getCommands();
