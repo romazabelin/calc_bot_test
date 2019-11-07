@@ -17,16 +17,16 @@ Route::get('/', function () {
 $updates = Telegram::getWebhookUpdates();
 
 // Example of POST Route:
-Route::post('/703953909:AAGNrH2u0s2W-90di4gvwqDh-ATP7YR-mEc/webhook', function () {
-    $updates = Telegram::getWebhookUpdates();
-
-    return 'ok';
-});
+//Route::post('/703953909:AAGNrH2u0s2W-90di4gvwqDh-ATP7YR-mEc/webhook', function () {
+//    $updates = Telegram::getWebhookUpdates();
+//
+//    return 'ok';
+//});
 
 // Example of POST Route:
-//Route::post('/' . Telegram::getAccessToken() . '/webhook', function () {
-//    Telegram::commandsHandler(true);
-//});
+Route::post(Telegram::getAccessToken(), function () {
+    Telegram::commandsHandler(true);
+});
 
 //$response = Telegram::getMe();
 //
