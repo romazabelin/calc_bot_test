@@ -12,14 +12,19 @@ class BotController extends Controller
         Telegram::commandsHandler(true);
 
         $update = Telegram::getWebhookUpdates();
+        $telegramUser = $update['message'];
         $query = $update->getCallbackQuery();
-//
-//        if ($query->getId()) {
+
+        if ($query->getId()) {
+            Telegram::sendMessage([
+                'chat_id' => $telegramUser['from']['id'],
+                'text' => 'dsdsds'
+            ]);
 //            Telegram::answerCallbackQuery([
 //                'text' => $query->getId(),
 //                'callback_query_id' => $query->getId(),
 //                'show_alert' => true
 //            ]);
-//        }
+        }
     }
 }
