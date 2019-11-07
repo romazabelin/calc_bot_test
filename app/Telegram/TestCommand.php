@@ -30,7 +30,7 @@ class TestCommand extends Command
     public function handle($arguments)
     {
 
-        $update = Telegram::getWebhookUpdates();
+        $update = $this->getUpdate();
         $query = $update->getCallbackQuery();
 
         $keyboard = Keyboard::make()
