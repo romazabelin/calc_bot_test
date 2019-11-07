@@ -37,7 +37,7 @@
       <file leaf-file-name="telegram.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/telegram.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="32" selection-start="4125" selection-end="4125" vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="3485">
+            <state line="43" column="60" selection-start="1691" selection-end="1701" vertical-scroll-proportion="-6.5384617" vertical-offset="561" max-vertical-offset="3485">
               <folding />
             </state>
           </provider>
@@ -46,7 +46,7 @@
       <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="782">
+            <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,7 @@
       <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="10" selection-start="496" selection-end="496" vertical-scroll-proportion="0.82448035" vertical-offset="0" max-vertical-offset="510">
+            <state line="22" column="20" selection-start="506" selection-end="506" vertical-scroll-proportion="0.82448035" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -399,23 +399,9 @@
         <state line="14" column="6" selection-start="354" selection-end="354" vertical-scroll-proportion="-0.2682927" vertical-offset="263" max-vertical-offset="1887" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/cache/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="558" column="37" selection-start="14359" selection-end="14359" vertical-scroll-proportion="-2.7692308" vertical-offset="9414" max-vertical-offset="10642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/telegram.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="32" selection-start="4125" selection-end="4125" vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="3485">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
@@ -434,9 +420,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/telegram.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="60" selection-start="1691" selection-end="1701" vertical-scroll-proportion="-6.5384617" vertical-offset="561" max-vertical-offset="3485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="10" selection-start="496" selection-end="496" vertical-scroll-proportion="0.82448035" vertical-offset="0" max-vertical-offset="510">
+        <state line="22" column="20" selection-start="506" selection-end="506" vertical-scroll-proportion="0.82448035" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
