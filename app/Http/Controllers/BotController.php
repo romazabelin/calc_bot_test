@@ -9,13 +9,13 @@ class BotController extends Controller
 {
     public function webhookHandler()
     {
-        $updates = Telegram::getWebhookUpdates();
-        $isCallback = $updates->detectType() === 'callback_query';
+        $update = Telegram::getWebhookUpdates();
+        $query = $update->getCallbackQuery();
 
-        if ($isCallback) {
+        if ($query->getId()) {
             Telegram::answerCallbackQuery([
-                'text' => 'dsds',
-                'callback_query_id' => $updates->getId()
+                'text' => $query->getId(),
+                'callback_query_id' => $query->getId()
             ]);
         }
 
