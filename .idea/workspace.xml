@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +46,7 @@
       <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="59" selection-start="511" selection-end="556" vertical-scroll-proportion="0.39211136" vertical-offset="120" max-vertical-offset="578">
+            <state line="19" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.4709977" vertical-offset="120" max-vertical-offset="578">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
               </folding>
@@ -99,10 +99,10 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/telegram.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -512,7 +512,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="59" selection-start="511" selection-end="556" vertical-scroll-proportion="0.39211136" vertical-offset="120" max-vertical-offset="578">
+        <state line="19" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.4709977" vertical-offset="120" max-vertical-offset="578">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
           </folding>
