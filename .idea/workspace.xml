@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/telegram.php" afterPath="$PROJECT_DIR$/config/telegram.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +31,7 @@
       <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="65" selection-start="9288" selection-end="9288" vertical-scroll-proportion="-7.1960783" vertical-offset="3526" max-vertical-offset="4080">
+            <state line="221" column="8" selection-start="8751" selection-end="8751" vertical-scroll-proportion="-2.627451" vertical-offset="3623" max-vertical-offset="4080">
               <folding />
             </state>
           </provider>
@@ -38,7 +40,7 @@
       <file leaf-file-name="telegram.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/telegram.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="28" selection-start="1620" selection-end="1620" vertical-scroll-proportion="-4.3137255" vertical-offset="494" max-vertical-offset="3485">
+            <state line="43" column="95" selection-start="1673" selection-end="1718" vertical-scroll-proportion="-4.647059" vertical-offset="494" max-vertical-offset="3485">
               <folding />
             </state>
           </provider>
@@ -58,7 +60,7 @@
       <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="38" selection-start="491" selection-end="491" vertical-scroll-proportion="0.3689095" vertical-offset="113" max-vertical-offset="544">
+            <state line="19" column="59" selection-start="581" selection-end="581" vertical-scroll-proportion="0.25058004" vertical-offset="215" max-vertical-offset="680">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
               </folding>
@@ -100,11 +102,11 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
         <option value="$PROJECT_DIR$/config/telegram.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
@@ -384,16 +386,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="6" selection-start="433" selection-end="433" vertical-scroll-proportion="-8.076923" vertical-offset="96" max-vertical-offset="527">
+          <folding>
+            <element signature="e#39#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Laravel/TelegramServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="354" selection-end="354" vertical-scroll-proportion="-0.2682927" vertical-offset="263" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="65" selection-start="9288" selection-end="9288" vertical-scroll-proportion="-7.1960783" vertical-offset="3526" max-vertical-offset="4080">
+        <state line="221" column="8" selection-start="8751" selection-end="8751" vertical-scroll-proportion="-2.627451" vertical-offset="3623" max-vertical-offset="4080">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/telegram.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="28" selection-start="1620" selection-end="1620" vertical-scroll-proportion="-4.3137255" vertical-offset="494" max-vertical-offset="3485">
+        <state line="43" column="95" selection-start="1673" selection-end="1718" vertical-scroll-proportion="-4.647059" vertical-offset="494" max-vertical-offset="3485">
           <folding />
         </state>
       </provider>
@@ -407,18 +425,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="433" selection-end="433" vertical-scroll-proportion="-8.076923" vertical-offset="96" max-vertical-offset="527">
-          <folding>
-            <element signature="e#39#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="38" selection-start="491" selection-end="491" vertical-scroll-proportion="0.3689095" vertical-offset="113" max-vertical-offset="544">
+        <state line="19" column="59" selection-start="581" selection-end="581" vertical-scroll-proportion="0.25058004" vertical-offset="215" max-vertical-offset="680">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
           </folding>
