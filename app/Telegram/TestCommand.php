@@ -31,7 +31,7 @@ class TestCommand extends Command
     {
 
         $update = $this->getUpdate();
-        $query = $update->getCallbackQuery();
+        $callback_query = $update['callback_query'];
 
         $keyboard = Keyboard::make()
             ->inline()
@@ -40,7 +40,7 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => 'Btn 2', 'callback_data' => 'data_from_btn2'])
             );
 
-        if ($query->getId()) {
+        if ($callback_query) {
             $this->replyWithMessage(['text' => 'Bla', 'reply_markup' => $keyboard]);
         } else {
             $this->replyWithMessage(['text' => 'Start command', 'reply_markup' => $keyboard]);
