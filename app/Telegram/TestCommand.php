@@ -4,6 +4,7 @@ namespace App\Telegram;
 
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
+use Telegram\Bot\Keyboard\Keyboard;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
 class TestCommand extends Command
@@ -35,10 +36,14 @@ class TestCommand extends Command
             ['0']
         ];
 
-        $replyMarkup = Telegram::replyKeyboardMarkup([
-            'keyboard' => $keyboard,
-            'resize_keyboard' => true,
-            'one_time_keyboard' => false
+//        $replyMarkup = Key::replyKeyboardMarkup([
+//            'keyboard' => $keyboard,
+//            'resize_keyboard' => true,
+//            'one_time_keyboard' => false
+//        ]);
+
+        $replyMarkup = Keyboard::inlineButton([
+            'text' => 'ssss'
         ]);
 
         $this->replyWithMessage([
