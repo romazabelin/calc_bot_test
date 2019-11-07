@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
     </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,13 +43,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="web.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="0.72389793" vertical-offset="79" max-vertical-offset="510">
+            <state line="23" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="-12.0" vertical-offset="79" max-vertical-offset="510">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kernel.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="14" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.37438422" vertical-offset="460" max-vertical-offset="1496">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,6 +102,7 @@
         <option value="$PROJECT_DIR$/config/telegram.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
       </list>
     </option>
   </component>
@@ -484,10 +494,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="0.72389793" vertical-offset="79" max-vertical-offset="510">
+        <state line="23" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="-12.0" vertical-offset="79" max-vertical-offset="510">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.37438422" vertical-offset="460" max-vertical-offset="1496">
+          <folding />
         </state>
       </provider>
     </entry>
