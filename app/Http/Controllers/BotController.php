@@ -16,9 +16,9 @@ class BotController extends Controller
         $query = $update->getCallbackQuery();
 
         if ($query->getId()) {
-            Telegram::sendMessage([
-                'text' => 'dsdsds'
-            ]);
+//            Telegram::sendMessage([
+//                'text' => 'dsdsds'
+//            ]);
 //            Telegram::answerCallbackQuery([
 //                'text' => $query->getId(),
 //                'callback_query_id' => $query->getId(),
