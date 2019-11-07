@@ -22,7 +22,5 @@ $updates = Telegram::getWebhookUpdates();
 
 // Example of POST Route:
 Route::post('/' . Telegram::getAccessToken() . '/webhook', function () {
-    $updates = Telegram::getWebhookUpdates();
-
-    return 'ok';
+    Telegram::commandsHandler(true);
 });

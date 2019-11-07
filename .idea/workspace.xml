@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="55" selection-start="541" selection-end="541" vertical-scroll-proportion="0.6450116" vertical-offset="96" max-vertical-offset="527">
+            <state line="18" column="6" selection-start="433" selection-end="433" vertical-scroll-proportion="-8.076923" vertical-offset="96" max-vertical-offset="527">
               <folding>
                 <element signature="e#39#111#0" expanded="true" />
               </folding>
@@ -65,13 +65,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="18" selection-start="641" selection-end="667" vertical-scroll-proportion="-10.038462" vertical-offset="130" max-vertical-offset="561">
+            <state line="21" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.60556847" vertical-offset="96" max-vertical-offset="527">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
-                <marker date="1573122729432" expanded="true" signature="455:552" placeholder="..." />
+                <marker date="1573123008689" expanded="true" signature="455:552" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -104,8 +104,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/telegram.php" />
         <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -391,6 +391,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/telegram.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="95" selection-start="1691" selection-end="1736" vertical-scroll-proportion="-4.3333335" vertical-offset="510" max-vertical-offset="3485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="7" selection-start="778" selection-end="778" vertical-scroll-proportion="-12.653846" vertical-offset="266" max-vertical-offset="782">
@@ -400,28 +407,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="641" selection-end="667" vertical-scroll-proportion="-10.038462" vertical-offset="130" max-vertical-offset="561">
+        <state line="18" column="6" selection-start="433" selection-end="433" vertical-scroll-proportion="-8.076923" vertical-offset="96" max-vertical-offset="527">
           <folding>
-            <element signature="e#6#388#0" expanded="true" />
-            <marker date="1573122729432" expanded="true" signature="455:552" placeholder="..." />
+            <element signature="e#39#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/telegram.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="95" selection-start="1691" selection-end="1736" vertical-scroll-proportion="-4.3333335" vertical-offset="510" max-vertical-offset="3485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="55" selection-start="541" selection-end="541" vertical-scroll-proportion="0.6450116" vertical-offset="96" max-vertical-offset="527">
+        <state line="21" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.60556847" vertical-offset="96" max-vertical-offset="527">
           <folding>
-            <element signature="e#39#111#0" expanded="true" />
+            <element signature="e#6#388#0" expanded="true" />
+            <marker date="1573123008689" expanded="true" signature="455:552" placeholder="..." />
           </folding>
         </state>
       </provider>
