@@ -15,11 +15,11 @@ class BotController extends Controller
         $query = $update->getCallbackQuery();
 
         if ($query->getId()) {
-            Telegram::answerCallbackQuery([
-                'text' => $query->getId(),
-                'callback_query_id' => $query->getId(),
-                'show_alert' => true
-            ]);
+//            Telegram::answerCallbackQuery([
+//                'text' => $query->getId(),
+//                'callback_query_id' => $query->getId(),
+//                'show_alert' => true
+//            ]);
         }
     }
 }
