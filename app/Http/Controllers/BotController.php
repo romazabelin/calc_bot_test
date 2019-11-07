@@ -11,7 +11,7 @@ class BotController extends Controller
     {
         Telegram::commandsHandler(true);
 
-        $update = Telegram::getWebhookUpdates();
+//        $update = Telegram::getWebhookUpdates();
 //        $telegramUser = $update['message'];
 //        $query = $update->getCallbackQuery();
 
