@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path="calculator_bot.iws" />
@@ -44,6 +43,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.72389793" vertical-offset="79" max-vertical-offset="510">
+              <folding>
+                <element signature="e#6#388#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,21 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.40835267" vertical-offset="79" max-vertical-offset="510">
-              <folding>
-                <element signature="e#6#388#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="8.923077" vertical-offset="334" max-vertical-offset="765">
+            <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -462,16 +461,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
+    <entry file="file://$PROJECT_DIR$/config/telegram.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="8.923077" vertical-offset="334" max-vertical-offset="765">
+        <state line="43" column="95" selection-start="1673" selection-end="1718" vertical-scroll-proportion="40.53846" vertical-offset="1785" max-vertical-offset="3485">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/telegram.php">
+    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="95" selection-start="1673" selection-end="1718" vertical-scroll-proportion="40.53846" vertical-offset="1785" max-vertical-offset="3485">
+        <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
@@ -485,7 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.40835267" vertical-offset="79" max-vertical-offset="510">
+        <state line="23" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.72389793" vertical-offset="79" max-vertical-offset="510">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
           </folding>
