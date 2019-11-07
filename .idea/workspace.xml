@@ -66,7 +66,7 @@
       <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="23" selection-start="509" selection-end="509" vertical-scroll-proportion="0.82448035" vertical-offset="0" max-vertical-offset="510">
+            <state line="22" column="22" selection-start="508" selection-end="508" vertical-scroll-proportion="0.82448035" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -436,7 +436,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="23" selection-start="509" selection-end="509" vertical-scroll-proportion="0.82448035" vertical-offset="0" max-vertical-offset="510">
+        <state line="22" column="22" selection-start="508" selection-end="508" vertical-scroll-proportion="0.82448035" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
