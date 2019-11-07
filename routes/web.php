@@ -15,13 +15,13 @@ Route::get('/', function () {
 });
 
 //$updates = Telegram::getWebhookUpdates();
-//Route::post('/975643316:AAF2bLrUzkNaUstjZZhcSzR5JzqFH8IpKas/webhook', function () {
-//    Telegram::commandsHandler(true);
-//});
-
-Route::post(Telegram::getAccessToken(), function () {
+Route::post('/975643316:AAF2bLrUzkNaUstjZZhcSzR5JzqFH8IpKas/webhook', function () {
     Telegram::commandsHandler(true);
 });
+
+//Route::post(Telegram::getAccessToken(), function () {
+//    Telegram::commandsHandler(true);
+//});
 
 //$response = Telegram::getMe();
 //echo $botId = $response->getId();
