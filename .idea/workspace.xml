@@ -28,7 +28,16 @@
       <file leaf-file-name="Api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="239" column="59" selection-start="5877" selection-end="5888" vertical-scroll-proportion="0.9019608" vertical-offset="3837" max-vertical-offset="28526">
+            <state line="1148" column="9" selection-start="31214" selection-end="31214" vertical-scroll-proportion="-1.627451" vertical-offset="19161" max-vertical-offset="28526">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Update.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Objects/Update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="3" selection-start="776" selection-end="776" vertical-scroll-proportion="-6.1153846" vertical-offset="62" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -57,7 +66,7 @@
       <file leaf-file-name="BotController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="30" selection-start="688" selection-end="688" vertical-scroll-proportion="0.3789731" vertical-offset="287" max-vertical-offset="731">
+            <state line="23" column="20" selection-start="582" selection-end="916" vertical-scroll-proportion="0.20615384" vertical-offset="324" max-vertical-offset="731">
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -199,10 +208,10 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24673203" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24673203" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38398692" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38398692" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25755286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -449,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Keyboard/Keyboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="11" selection-start="811" selection-end="815" vertical-scroll-proportion="-2.6666667" vertical-offset="408" max-vertical-offset="3417">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="35" selection-start="271" selection-end="297" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1156">
@@ -466,13 +468,6 @@
     <entry file="file://$PROJECT_DIR$/config/telegram.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="95" selection-start="1673" selection-end="1718" vertical-scroll-proportion="0.33178654" vertical-offset="588" max-vertical-offset="3485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="59" selection-start="5877" selection-end="5888" vertical-scroll-proportion="0.9019608" vertical-offset="3837" max-vertical-offset="28526">
           <folding />
         </state>
       </provider>
@@ -498,15 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="21" selection-start="892" selection-end="892" vertical-scroll-proportion="-13.807693" vertical-offset="304" max-vertical-offset="986">
-          <folding>
-            <element signature="e#32#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="56" selection-start="509" selection-end="509" vertical-scroll-proportion="-5.3076925" vertical-offset="134" max-vertical-offset="459">
@@ -516,9 +502,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="21" selection-start="892" selection-end="892" vertical-scroll-proportion="-13.807693" vertical-offset="304" max-vertical-offset="986">
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1148" column="9" selection-start="31214" selection-end="31214" vertical-scroll-proportion="-1.627451" vertical-offset="19161" max-vertical-offset="28526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Objects/Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="3" selection-start="776" selection-end="776" vertical-scroll-proportion="-6.1153846" vertical-offset="62" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Keyboard/Keyboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="11" selection-start="811" selection-end="815" vertical-scroll-proportion="-2.6666667" vertical-offset="408" max-vertical-offset="3417">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="688" selection-end="688" vertical-scroll-proportion="0.3789731" vertical-offset="287" max-vertical-offset="731">
+        <state line="23" column="20" selection-start="582" selection-end="916" vertical-scroll-proportion="0.20615384" vertical-offset="324" max-vertical-offset="731">
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>
