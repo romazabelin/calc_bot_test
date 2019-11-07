@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Telegram/TestCommand.php" afterPath="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/telegram.php" afterPath="$PROJECT_DIR$/config/telegram.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="telegram.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="telegram.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/telegram.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="8" selection-start="4152" selection-end="4152" vertical-scroll-proportion="-2.8823528" vertical-offset="1774" max-vertical-offset="3485">
+            <state line="42" column="28" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.50246304" vertical-offset="510" max-vertical-offset="3485">
               <folding />
             </state>
           </provider>
@@ -50,7 +46,7 @@
       <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="7" selection-start="357" selection-end="357" vertical-scroll-proportion="-7.8461537" vertical-offset="153" max-vertical-offset="765">
+            <state line="21" column="7" selection-start="357" selection-end="357" vertical-scroll-proportion="-0.0" vertical-offset="357" max-vertical-offset="765">
               <folding>
                 <element signature="e#32#57#0" expanded="true" />
               </folding>
@@ -58,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="463" selection-end="463" vertical-scroll-proportion="0.59302324" vertical-offset="153" max-vertical-offset="510">
+            <state line="21" column="20" selection-start="463" selection-end="463" vertical-scroll-proportion="-7.8461537" vertical-offset="153" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -105,8 +101,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/config/telegram.php" />
         <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
+        <option value="$PROJECT_DIR$/config/telegram.php" />
       </list>
     </option>
   </component>
@@ -173,6 +169,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator_bot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator_bot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,7 +275,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3529412" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21078432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -364,9 +374,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-11-07.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="65" selection-start="9288" selection-end="9288" vertical-scroll-proportion="-7.1960783" vertical-offset="3526" max-vertical-offset="4080">
+        <state line="129" column="110" selection-start="22417" selection-end="22417" vertical-scroll-proportion="0.33333334" vertical-offset="2076" max-vertical-offset="4522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="20" selection-start="463" selection-end="463" vertical-scroll-proportion="-7.8461537" vertical-offset="153" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
@@ -380,32 +397,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-11-07.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="110" selection-start="22417" selection-end="22417" vertical-scroll-proportion="0.33333334" vertical-offset="2076" max-vertical-offset="4522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/telegram.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="8" selection-start="4152" selection-end="4152" vertical-scroll-proportion="-2.8823528" vertical-offset="1774" max-vertical-offset="3485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="7" selection-start="357" selection-end="357" vertical-scroll-proportion="-7.8461537" vertical-offset="153" max-vertical-offset="765">
+        <state line="21" column="7" selection-start="357" selection-end="357" vertical-scroll-proportion="-0.0" vertical-offset="357" max-vertical-offset="765">
           <folding>
             <element signature="e#32#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
+    <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="463" selection-end="463" vertical-scroll-proportion="0.59302324" vertical-offset="153" max-vertical-offset="510">
+        <state line="229" column="65" selection-start="9288" selection-end="9288" vertical-scroll-proportion="-7.1960783" vertical-offset="3526" max-vertical-offset="4080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/telegram.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="28" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.50246304" vertical-offset="510" max-vertical-offset="3485">
           <folding />
         </state>
       </provider>
