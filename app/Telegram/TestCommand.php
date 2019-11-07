@@ -37,7 +37,8 @@ class TestCommand extends Command
             );
 
 
-        $this->replyWithMessage(['text' => 'Start command', 'reply_markup' => $keyboard]);
+        Telegram::sendMessage(['text' => 'ssst command', 'reply_markup' => $keyboard]);
+        //$this->replyWithMessage();
 
         //        $update = $this->getUpdate();
 //        $commands = $this->telegram->getCommands();
