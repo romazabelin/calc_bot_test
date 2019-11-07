@@ -23,7 +23,7 @@ Route::get('/', function () {
 //    return 'ok';
 //});
 
-Route::post(Telegram::getAccessToken(), function () {
+Route::post('/webhook', function () {
     Telegram::commandsHandler(true);
 });
 
