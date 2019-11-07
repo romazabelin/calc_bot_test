@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path="calculator_bot.iws" />
@@ -46,7 +47,7 @@
       <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.4709977" vertical-offset="120" max-vertical-offset="578">
+            <state line="27" column="36" selection-start="814" selection-end="814" vertical-scroll-proportion="0.78654295" vertical-offset="120" max-vertical-offset="578">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
               </folding>
@@ -57,8 +58,10 @@
       <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="81" selection-end="81" vertical-scroll-proportion="1.7307693" vertical-offset="113" max-vertical-offset="544">
-              <folding />
+            <state line="24" column="6" selection-start="535" selection-end="535" vertical-scroll-proportion="-13.307693" vertical-offset="62" max-vertical-offset="544">
+              <folding>
+                <element signature="e#39#111#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,10 +102,10 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/telegram.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
       </list>
     </option>
   </component>
@@ -352,7 +355,9 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="6" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="527">
-          <folding />
+          <folding>
+            <element signature="e#39#111#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -389,7 +394,9 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="6" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="527">
-          <folding />
+          <folding>
+            <element signature="e#39#111#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -482,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="53" selection-start="658" selection-end="658" vertical-scroll-proportion="-6.1153846" vertical-offset="351" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="361" column="22" selection-start="9328" selection-end="9328" vertical-scroll-proportion="-225.57692" vertical-offset="0" max-vertical-offset="28526">
@@ -503,16 +503,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="53" selection-start="658" selection-end="658" vertical-scroll-proportion="-6.1153846" vertical-offset="351" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="81" selection-end="81" vertical-scroll-proportion="1.7307693" vertical-offset="113" max-vertical-offset="544">
-          <folding />
+        <state line="24" column="6" selection-start="535" selection-end="535" vertical-scroll-proportion="-13.307693" vertical-offset="62" max-vertical-offset="544">
+          <folding>
+            <element signature="e#39#111#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.4709977" vertical-offset="120" max-vertical-offset="578">
+        <state line="27" column="36" selection-start="814" selection-end="814" vertical-scroll-proportion="0.78654295" vertical-offset="120" max-vertical-offset="578">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
           </folding>
