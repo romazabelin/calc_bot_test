@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Telegram/TestCommand.php" afterPath="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
     </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestCommand.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="7" selection-start="778" selection-end="778" vertical-scroll-proportion="-12.653846" vertical-offset="266" max-vertical-offset="782">
+            <state line="18" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.3689095" vertical-offset="147" max-vertical-offset="782">
               <folding>
                 <element signature="e#32#57#0" expanded="true" />
               </folding>
@@ -65,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="web.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.60556847" vertical-offset="96" max-vertical-offset="527">
+            <state line="21" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="-10.038462" vertical-offset="96" max-vertical-offset="527">
               <folding>
                 <element signature="e#6#388#0" expanded="true" />
                 <marker date="1573123008689" expanded="true" signature="455:552" placeholder="..." />
@@ -103,9 +103,9 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/telegram.php" />
-        <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
       </list>
     </option>
   </component>
@@ -398,15 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="7" selection-start="778" selection-end="778" vertical-scroll-proportion="-12.653846" vertical-offset="266" max-vertical-offset="782">
-          <folding>
-            <element signature="e#32#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="6" selection-start="433" selection-end="433" vertical-scroll-proportion="-8.076923" vertical-offset="96" max-vertical-offset="527">
@@ -418,10 +409,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.60556847" vertical-offset="96" max-vertical-offset="527">
+        <state line="21" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="-10.038462" vertical-offset="96" max-vertical-offset="527">
           <folding>
             <element signature="e#6#388#0" expanded="true" />
             <marker date="1573123008689" expanded="true" signature="455:552" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.3689095" vertical-offset="147" max-vertical-offset="782">
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
