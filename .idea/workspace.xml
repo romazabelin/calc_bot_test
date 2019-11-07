@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/BotController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/BotController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Telegram/TestCommand.php" afterPath="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
     </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,7 +73,7 @@
       <file leaf-file-name="BotController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="46" selection-start="479" selection-end="479" vertical-scroll-proportion="-0.0678392" vertical-offset="333" max-vertical-offset="731">
+            <state line="22" column="40" selection-start="601" selection-end="601" vertical-scroll-proportion="0.40201005" vertical-offset="214" max-vertical-offset="731">
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -617,7 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="479" selection-end="479" vertical-scroll-proportion="-0.0678392" vertical-offset="333" max-vertical-offset="731">
+        <state line="22" column="40" selection-start="601" selection-end="601" vertical-scroll-proportion="0.40201005" vertical-offset="214" max-vertical-offset="731">
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>

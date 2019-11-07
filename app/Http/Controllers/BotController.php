@@ -20,6 +20,7 @@ class BotController extends Controller
 //                'show_alert' => true
 //            ]);
 //        }
+        Telegram::commandsHandler(true);
 
         $update = Telegram::getWebhookUpdates();
         $query = $update->getCallbackQuery();
@@ -32,6 +33,5 @@ class BotController extends Controller
             ]);
         }
 
-        Telegram::commandsHandler(true);
     }
 }
