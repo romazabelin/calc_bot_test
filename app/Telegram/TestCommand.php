@@ -31,7 +31,6 @@ class TestCommand extends Command
     public function handle($arguments)
     {
         $update = $this->getUpdate();
-        //$update->getChat()->getId()
 
         $keyboard = Keyboard::make()
             ->inline()
@@ -53,7 +52,7 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => 'result'])
             );
 
-        $message = $this->replyWithMessage([
+        $this->replyWithMessage([
             'text' => 'Lets Go',
             'reply_markup' => $keyboard
         ]);
