@@ -49,7 +49,7 @@ class BotController extends Controller
 //            ]);
             Telegram::sendMessage([
                 'chat_id' => $query->getFrom()->getId(),
-                'text' => $query->getData()
+                'text' => $query->getData() . ' ' . $query->getMessage()->getMessageId()
             ]);
         } else {
             Telegram::commandsHandler(true);
