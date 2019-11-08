@@ -29,7 +29,6 @@ class TestCommand extends Command
      */
     public function handle($arguments)
     {
-//        $update = Telegram::getWebhookUpdates();
         $update = $this->getUpdate();
 
         $keyboard = Keyboard::make()
@@ -50,10 +49,6 @@ class TestCommand extends Command
             );
 
         $this->replyWithMessage(['text' => $update->getChat()->getId(), 'reply_markup' => $keyboard]);
-//        Telegram::sendMesage([
-//            'chat_id' => $update->getChat()->getId(),
-//            'text' => 'sdsdsds'
-//        ]);
 
         //triggerCommand
         //$update->getMessage()->getChat()->getId()
