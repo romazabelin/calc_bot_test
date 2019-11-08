@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/BotController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/BotController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Telegram/TestCommand.php" afterPath="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
     </list>
     <ignored path="calculator_bot.iws" />
@@ -73,10 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BotController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BotController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="59" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.46910754" vertical-offset="645" max-vertical-offset="1105">
+            <state line="47" column="39" selection-start="2044" selection-end="2044" vertical-scroll-proportion="-5.923077" vertical-offset="645" max-vertical-offset="1105">
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -84,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestCommand.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="36" selection-start="1869" selection-end="1882" vertical-scroll-proportion="-10.923077" vertical-offset="736" max-vertical-offset="1241">
+            <state line="60" column="20" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.6498856" vertical-offset="736" max-vertical-offset="1241">
               <folding>
                 <element signature="e#32#71#0" expanded="true" />
               </folding>
@@ -128,8 +127,8 @@
         <option value="$PROJECT_DIR$/config/telegram.php" />
         <option value="$PROJECT_DIR$/app/Telegram/BlaCommand.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BotController.php" />
+        <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
       </list>
     </option>
   </component>
@@ -677,20 +676,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="36" selection-start="1869" selection-end="1882" vertical-scroll-proportion="-10.923077" vertical-offset="736" max-vertical-offset="1241">
+        <state line="47" column="39" selection-start="2044" selection-end="2044" vertical-scroll-proportion="-5.923077" vertical-offset="645" max-vertical-offset="1105">
           <folding>
-            <element signature="e#32#71#0" expanded="true" />
+            <element signature="e#40#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
+    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="59" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.46910754" vertical-offset="645" max-vertical-offset="1105">
+        <state line="60" column="20" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.6498856" vertical-offset="736" max-vertical-offset="1241">
           <folding>
-            <element signature="e#40#68#0" expanded="true" />
+            <element signature="e#32#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
