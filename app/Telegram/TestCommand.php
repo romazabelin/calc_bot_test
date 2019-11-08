@@ -40,7 +40,7 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => '2', 'callback_data' => 'data']),
                 Keyboard::inlineButton(['text' => '3', 'callback_data' => 'data']),
                 Keyboard::inlineButton(['text' => '+', 'callback_data' => 'dsd']),
-                Keyboard::inlineButton(['text' => '-', 'callback_data' => ''])
+                Keyboard::inlineButton(['text' => '-', 'callback_data' => 'vfdc'])
             )
             ->row(
                 Keyboard::inlineButton(['text' => '4', 'callback_data' => 'sds']),

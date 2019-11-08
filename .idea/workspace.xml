@@ -73,7 +73,7 @@
       <file leaf-file-name="TestCommand.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="82" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.5863747" vertical-offset="592" max-vertical-offset="1224">
+            <state line="42" column="79" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.29683697" vertical-offset="592" max-vertical-offset="1224">
               <folding>
                 <element signature="e#32#57#0" expanded="true" />
               </folding>
@@ -661,7 +661,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="82" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.5863747" vertical-offset="592" max-vertical-offset="1224">
+        <state line="42" column="79" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.29683697" vertical-offset="592" max-vertical-offset="1224">
           <folding>
             <element signature="e#32#57#0" expanded="true" />
           </folding>
