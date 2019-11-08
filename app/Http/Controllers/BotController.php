@@ -25,7 +25,7 @@ class BotController extends Controller
 //                'text' => 'sdsdsds'
 //            ]);
             Telegram::answerCallbackQuery([
-                'text' => $query->getData() . ' ' . $query->getMessage()->getChat()->getId() . ' ' . $query->getId(),
+                'text' => $query->getData() . ' ' . $query->getFrom()->getId() . ' ' . $query->getId(),
                 'callback_query_id' => $query->getId(),
                 'show_alert' => true
             ]);

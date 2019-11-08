@@ -49,6 +49,7 @@ class TestCommand extends Command
             );
 
         $this->replyWithMessage(['text' => $update->getMessage()->getChat()->getId(), 'reply_markup' => $keyboard]);
+        //query->getMessage()->getChat()->getId()
 
         //        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName()]);
         //        $update = $this->getUpdate();
