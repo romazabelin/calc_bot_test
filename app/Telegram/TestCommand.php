@@ -48,13 +48,14 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => '/', 'callback_data' => 'sdsdsds'])
             );
 
-        $this->replyWithMessage(['text' => $update->getMessage()->getChat()->getId(), 'reply_markup' => $keyboard]);
+        $this->replyWithMessage(['text' => $update->getChat()->getId(), 'reply_markup' => $keyboard]);
 //        Telegram::sendMesage([
 //            'chat_id' => $update->getMessage()->getChat()->getId(),
 //            'text' => 'sdsdsds'
 //        ]);
 
         //triggerCommand
+        //$update->getMessage()->getChat()->getId()
 
         //        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName()]);
         //        $update = $this->getUpdate();
