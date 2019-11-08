@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Telegram/BlaCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/telegram.php" afterPath="$PROJECT_DIR$/config/telegram.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Telegram/BlaCommand.php" afterPath="$PROJECT_DIR$/app/Telegram/BlaCommand.php" />
     </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Api.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="256" column="5" selection-start="6415" selection-end="6415" vertical-scroll-proportion="0.7642487" vertical-offset="3785" max-vertical-offset="28526">
+            <state line="244" column="39" selection-start="6016" selection-end="6016" vertical-scroll-proportion="-1.7843137" vertical-offset="3785" max-vertical-offset="28526">
               <folding />
             </state>
           </provider>
@@ -82,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlaCommand.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BlaCommand.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Telegram/BlaCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="23" selection-start="589" selection-end="589" vertical-scroll-proportion="-8.615385" vertical-offset="337" max-vertical-offset="748">
+            <state line="35" column="114" selection-start="744" selection-end="744" vertical-scroll-proportion="0.7518248" vertical-offset="286" max-vertical-offset="748">
               <folding>
                 <element signature="e#32#57#0" expanded="true" />
               </folding>
@@ -115,8 +114,8 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BotController.php" />
         <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
-        <option value="$PROJECT_DIR$/app/Telegram/BlaCommand.php" />
         <option value="$PROJECT_DIR$/config/telegram.php" />
+        <option value="$PROJECT_DIR$/app/Telegram/BlaCommand.php" />
       </list>
     </option>
   </component>
@@ -591,15 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Telegram/BlaCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="23" selection-start="589" selection-end="589" vertical-scroll-proportion="-8.615385" vertical-offset="337" max-vertical-offset="748">
-          <folding>
-            <element signature="e#32#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/telegram.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="43" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.28756475" vertical-offset="1793" max-vertical-offset="3502">
@@ -609,8 +599,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="5" selection-start="6415" selection-end="6415" vertical-scroll-proportion="0.7642487" vertical-offset="3785" max-vertical-offset="28526">
+        <state line="244" column="39" selection-start="6016" selection-end="6016" vertical-scroll-proportion="-1.7843137" vertical-offset="3785" max-vertical-offset="28526">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Telegram/BlaCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="114" selection-start="744" selection-end="744" vertical-scroll-proportion="0.7518248" vertical-offset="286" max-vertical-offset="748">
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

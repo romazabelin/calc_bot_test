@@ -33,6 +33,6 @@ class BLaCommand extends Command
 
         $keyboard = Keyboard::hide(['hide_keyboard' => true]);
 
-        $this->replyWithMessage(['text' => $update->getChat()->getId(), 'reply_markup' => $keyboard]);
+        $this->replyWithMessage(['text' => $update->getChat()->getId(), 'reply_markup' => ['hide_keyboard'=> true]]);
     }
 }
