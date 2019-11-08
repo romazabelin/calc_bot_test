@@ -2,6 +2,7 @@
 
 namespace App\Telegram;
 
+use Illuminate\Support\Facades\Session;
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
 use Telegram\Bot\Keyboard\Keyboard;
@@ -51,12 +52,16 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => 'result'])
             );
 
-        $this->replyWithMessage([
+        $message = $this->replyWithMessage([
             'text' => 'Lets Go',
             'reply_markup' => $keyboard
         ]);
 
-//        Session::put('formMessageId', $message->getMessageId());
+        Session::put('formMessageId', $message->getMessageId());
+
+        $this->replyWithMessage([
+            'text' => $message->getMessageId() . ' session ' . Session::get('formMessageId')
+        ]);
 
         //$update->getMessage()->getChat()->getId()
         //        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName()]);
