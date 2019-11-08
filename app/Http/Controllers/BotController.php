@@ -34,10 +34,16 @@ class BotController extends Controller
                     $queryParams = str_replace('?params=', '', $paramsString);
                     $elements = array_filter(explode(';', $queryParams));
 
-                    if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
-                        $elements[count($elements) - 1] = $elements[count($elements) - 1] . $newKey;
+                    if ($newKey == '+' || $newKey == '-' || $newKey == '*' || $newKey == '/') {
+                        if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
+                            $elements[] = $newKey;
+                        }
                     } else {
-                        $elements[] = $newKey;
+                        if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
+                            $elements[count($elements) - 1] = $elements[count($elements) - 1] . $newKey;
+                        } else {
+                            $elements[] = $newKey;
+                        }
                     }
 
                     if (count($elements) == 1) {
@@ -48,7 +54,9 @@ class BotController extends Controller
                     $newParamString = '?params=' . $newParamString;
                 } else {
                     $newKey = str_replace('key_', '', $callbackData);
-                    $newParamString .= '?params=' . $newKey . ';';
+                    if ($newKey != '+' && $newKey != '-' && $newKey != '*' && $newKey != '/') {
+                        $newParamString .= '?params=' . $newKey . ';';
+                    }
                 }
 
                 $keyboard = Keyboard::make()
