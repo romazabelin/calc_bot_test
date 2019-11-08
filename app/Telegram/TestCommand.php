@@ -29,17 +29,6 @@ class TestCommand extends Command
      */
     public function handle($arguments)
     {
-        $update = Telegram::getWebhookUpdates();
-        $query = $update->getCallbackQuery();
-
-        if ($query->getId()) {
-            Telegram::answerCallbackQuery([
-                'text' => $query->getData(),
-                'callback_query_id' => $query->getId(),
-                'show_alert' => true
-            ]);
-        }
-
         $keyboard = Keyboard::make()
             ->inline()
             ->row(
