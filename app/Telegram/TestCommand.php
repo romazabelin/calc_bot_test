@@ -35,27 +35,27 @@ class TestCommand extends Command
         $keyboard = Keyboard::make()
             ->inline()
             ->row(
-                Keyboard::inlineButton(['text' => '1', 'callback_data' => '1']),
-                Keyboard::inlineButton(['text' => '2', 'callback_data' => '2']),
-                Keyboard::inlineButton(['text' => '3', 'callback_data' => '3']),
-                Keyboard::inlineButton(['text' => '+', 'callback_data' => '+']),
-                Keyboard::inlineButton(['text' => '-', 'callback_data' => '-'])
+                Keyboard::inlineButton(['text' => '1', 'callback_data' => 'key_1']),
+                Keyboard::inlineButton(['text' => '2', 'callback_data' => 'key_2']),
+                Keyboard::inlineButton(['text' => '3', 'callback_data' => 'key_3']),
+                Keyboard::inlineButton(['text' => '+', 'callback_data' => 'key_+']),
+                Keyboard::inlineButton(['text' => '-', 'callback_data' => 'key_-'])
             )
             ->row(
-                Keyboard::inlineButton(['text' => '4', 'callback_data' => '4']),
-                Keyboard::inlineButton(['text' => '5', 'callback_data' => '5']),
-                Keyboard::inlineButton(['text' => '6', 'callback_data' => '6']),
-                Keyboard::inlineButton(['text' => '*', 'callback_data' => '*']),
-                Keyboard::inlineButton(['text' => '/', 'callback_data' => '/'])
+                Keyboard::inlineButton(['text' => '4', 'callback_data' => 'key_4']),
+                Keyboard::inlineButton(['text' => '5', 'callback_data' => 'key_5']),
+                Keyboard::inlineButton(['text' => '6', 'callback_data' => 'key_6']),
+                Keyboard::inlineButton(['text' => '*', 'callback_data' => 'key_*']),
+                Keyboard::inlineButton(['text' => '/', 'callback_data' => 'key_/'])
             )
             ->row(
-                Keyboard::inlineButton(['text' => '7', 'callback_data' => '7']),
-                Keyboard::inlineButton(['text' => '8', 'callback_data' => '8']),
-                Keyboard::inlineButton(['text' => '9', 'callback_data' => '9']),
-                Keyboard::inlineButton(['text' => '=', 'callback_data' => 'calc_result?params='])
+                Keyboard::inlineButton(['text' => '7', 'callback_data' => 'key_7']),
+                Keyboard::inlineButton(['text' => '8', 'callback_data' => 'key_8']),
+                Keyboard::inlineButton(['text' => '9', 'callback_data' => 'key_9']),
+                Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result'])
             )
             ->row(
-                Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => 'result'])
+                Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => 'key_result'])
             );
 
         $message = $this->replyWithMessage([
