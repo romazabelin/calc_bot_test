@@ -58,7 +58,7 @@ class TestCommand extends Command
             'reply_markup' => $keyboard
         ]);
 
-        Session::put('formMessageId', $message->getMessageId());
+//        Session::put('formMessageId', $message->getMessageId());
 
         //$update->getMessage()->getChat()->getId()
         //        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName()]);
