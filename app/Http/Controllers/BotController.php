@@ -63,12 +63,12 @@ class BotController extends Controller
                         Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => 'key_result'])
                     );
 
-//                Telegram::editMessageText([
-//                    'message_id' => $query->getMessage()->getMessageId(),
-//                    'text' => 'Update me',
-//                    'chat_id' => $query->getFrom()->getId(),
-//                    'reply_markup' => $keyboard
-//                ]);
+                Telegram::editMessageText([
+                    'message_id' => $query->getMessage()->getMessageId(),
+                    'text' => 'Update me',
+                    'chat_id' => $query->getFrom()->getId(),
+                    'reply_markup' => $keyboard
+                ]);
                 Telegram::sendMessage([
                     'text' => $newParamString,
                     'chat_id' => $query->getFrom()->getId()
