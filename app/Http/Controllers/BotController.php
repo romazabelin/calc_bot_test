@@ -56,7 +56,9 @@ class BotController extends Controller
 
                                 $newParamString .= '?params=' . $resOperation . ';';
                             }
-                        } else {}
+                        } else {
+                            $newParamString = $paramsString;
+                        }
                     }
                 } else {
                     if ($pos !== false) {
