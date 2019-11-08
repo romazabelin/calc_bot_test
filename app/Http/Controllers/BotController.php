@@ -30,8 +30,22 @@ class BotController extends Controller
                 if ($pos !== false) {
                     $newKey = str_replace('key_', '', substr($callbackData, 0, $pos));
                     $paramsString =  substr($callbackData, $pos, strlen($callbackData)-1);
-                    $newParamString .= $paramsString . $newKey . ';';
 
+                    $queryParams = str_replace('?params=', '', $paramsString);
+                    $elements = array_filter(explode(';', $queryParams));
+
+                    if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
+                        $elements[count($elements) - 1] = $elements[count($elements) - 1] . $newKey;
+                    } else {
+                        $elements[] = $newKey;
+                    }
+
+                    if (count($elements) == 1) {
+                        $newParamString = $elements[count($elements) - 1] . ';';
+                    } else {
+                        $newParamString = implode(";", $elements);
+                    }
+                    //$newParamString .= $paramsString . $newKey . ';';
                 } else {
                     $newKey = str_replace('key_', '', $callbackData);
                     $newParamString .= '?params=' . $newKey . ';';
@@ -69,15 +83,11 @@ class BotController extends Controller
                     'chat_id' => $query->getFrom()->getId(),
                     'reply_markup' => $keyboard
                 ]);
-                Telegram::sendMessage([
-                    'text' => $newParamString,
-                    'chat_id' => $query->getFrom()->getId()
-                ]);
+//                Telegram::sendMessage([
+//                    'text' => $newParamString,
+//                    'chat_id' => $query->getFrom()->getId()
+//                ]);
             } else {
-                Telegram::sendMessage([
-                    'chat_id' => $query->getFrom()->getId(),
-                    'text' => $callbackData . ' ' . $query->getMessage()->getMessageId()
-                ]);
             }
         } else {
             Telegram::commandsHandler(true);
