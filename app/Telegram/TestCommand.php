@@ -49,24 +49,9 @@ class TestCommand extends Command
             );
 
         $this->replyWithMessage(['text' => $update->getChat()->getId(), 'reply_markup' => $keyboard]);
-//        Telegram\Bot\Laravel\Facades\Telegram::sendMessage([
-//            'chat_id' => $update->getChat()->getId(),
-//            'text' => 'sdsdsds'
-//        ]);
 
-
-        //triggerCommand
         //$update->getMessage()->getChat()->getId()
-
         //        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName()]);
         //        $update = $this->getUpdate();
-//        $commands = $this->telegram->getCommands();
-//
-//        $text = '';
-//        foreach ($commands as $name => $handler) {
-//            $text .= sprintf('/%s - %s'.PHP_EOL, $name, $handler->getDescription());
-//        }
-//
-//        $this->replyWithMessage(compact('text'));
     }
 }

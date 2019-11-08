@@ -19,7 +19,7 @@ class BotController extends Controller
 //                'callback_query_id' => $query->getId(),
 //                'show_alert' => true
 //            ]);
-            Telegram\Bot\Laravel\Facades\Telegram::sendMessage([
+            Telegram::sendMessage([
                 'chat_id' => $query->getFrom()->getId(),
                 'text' => $query->getData()
             ]);
