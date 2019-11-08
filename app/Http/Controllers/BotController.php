@@ -48,7 +48,8 @@ class BotController extends Controller
 //            ]);
             Telegram::editMessageText([
                 'message_id' => 463,
-                'text' => 'Update me'
+                'text' => 'Update me',
+                'chat_id' => $query->getFrom()->getId()
             ]);
         } else {
             Telegram::commandsHandler(true);
