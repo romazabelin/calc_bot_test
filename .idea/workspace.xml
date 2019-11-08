@@ -73,8 +73,19 @@
       <file leaf-file-name="BotController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="41" selection-start="672" selection-end="691" vertical-scroll-proportion="0.703163" vertical-offset="136" max-vertical-offset="952">
+            <state line="30" column="17" selection-start="650" selection-end="897" vertical-scroll-proportion="0.8686131" vertical-offset="136" max-vertical-offset="952">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="38" selection-start="971" selection-end="983" vertical-scroll-proportion="-9.269231" vertical-offset="422" max-vertical-offset="1190">
+              <folding>
+                <element signature="e#32#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,17 +95,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="142" column="27" selection-start="3439" selection-end="3439" vertical-scroll-proportion="-2.509804" vertical-offset="2286" max-vertical-offset="3417">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="43" selection-start="1625" selection-end="1666" vertical-scroll-proportion="-10.576923" vertical-offset="575" max-vertical-offset="1190">
-              <folding>
-                <element signature="e#32#57#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -647,15 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="43" selection-start="1625" selection-end="1666" vertical-scroll-proportion="-10.576923" vertical-offset="575" max-vertical-offset="1190">
-          <folding>
-            <element signature="e#32#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Keyboard/Keyboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="27" selection-start="3439" selection-end="3439" vertical-scroll-proportion="-2.509804" vertical-offset="2286" max-vertical-offset="3417">
@@ -670,9 +661,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="38" selection-start="971" selection-end="983" vertical-scroll-proportion="-9.269231" vertical-offset="422" max-vertical-offset="1190">
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="41" selection-start="672" selection-end="691" vertical-scroll-proportion="0.703163" vertical-offset="136" max-vertical-offset="952">
+        <state line="30" column="17" selection-start="650" selection-end="897" vertical-scroll-proportion="0.8686131" vertical-offset="136" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
