@@ -5,7 +5,6 @@ namespace App\Telegram;
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
 use Telegram\Bot\Keyboard\Keyboard;
-use Telegram;
 
 class TestCommand extends Command
 {
@@ -48,11 +47,11 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => '/', 'callback_data' => 'sdsdsds'])
             );
 
-//        $this->replyWithMessage(['text' => $update->getMessage()->getChat()->getId(), 'reply_markup' => $keyboard]);
-        Telegram::sendMesage([
-            'chat_id' => $update->getMessage()->getChat()->getId(),
-            'text' => 'sdsdsds'
-        ]);
+        $this->replyWithMessage(['text' => $update->getMessage()->getChat()->getId(), 'reply_markup' => $keyboard]);
+//        Telegram::sendMesage([
+//            'chat_id' => $update->getMessage()->getChat()->getId(),
+//            'text' => 'sdsdsds'
+//        ]);
 
         //query->getMessage()->getChat()->getId()
 

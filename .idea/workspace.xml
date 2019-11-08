@@ -75,8 +75,10 @@
       <file leaf-file-name="TestCommand.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="9" selection-start="138" selection-end="138" vertical-scroll-proportion="-1.36" vertical-offset="663" max-vertical-offset="1292">
-              <folding />
+            <state line="53" column="13" selection-start="1670" selection-end="1806" vertical-scroll-proportion="0.085" vertical-offset="867" max-vertical-offset="1275">
+              <folding>
+                <element signature="e#32#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,7 +282,9 @@
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="1003">
-          <folding />
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -327,7 +331,9 @@
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="53" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="799">
-          <folding />
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -346,7 +352,9 @@
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="782">
-          <folding />
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -379,7 +387,9 @@
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="6" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="782">
-          <folding />
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -430,13 +440,6 @@
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="18" selection-start="666" selection-end="666" vertical-scroll-proportion="0.6280087" vertical-offset="376" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Laravel/Facades/Telegram.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="121" selection-end="121" vertical-scroll-proportion="0.35266823" vertical-offset="1" max-vertical-offset="459">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Laravel/TelegramServiceProvider.php">
@@ -587,10 +590,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Laravel/Facades/Telegram.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="6" selection-start="121" selection-end="121" vertical-scroll-proportion="-5.4615383" vertical-offset="11" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="138" selection-end="138" vertical-scroll-proportion="-1.36" vertical-offset="663" max-vertical-offset="1292">
-          <folding />
+        <state line="53" column="13" selection-start="1670" selection-end="1806" vertical-scroll-proportion="0.085" vertical-offset="867" max-vertical-offset="1275">
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
