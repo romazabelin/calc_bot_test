@@ -47,11 +47,11 @@ class BotController extends Controller
 //                'text' => $query->getData(),
 //                'reply_markup' => $keyboard
 //            ]);
-            Telegram::editMessageText([
-                'message_id' => Session::get('formMessageId'),
-                'text' => 'Update me',
-                'chat_id' => $query->getFrom()->getId()
-            ]);
+//            Telegram::editMessageText([
+//                'message_id' => Session::get('formMessageId'),
+//                'text' => 'Update me',
+//                'chat_id' => $query->getFrom()->getId()
+//            ]);
         } else {
             Telegram::commandsHandler(true);
         }
