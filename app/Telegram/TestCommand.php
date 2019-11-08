@@ -41,7 +41,7 @@ class TestCommand extends Command
 
 //        Telegram::sendMessage(['text' => 'ssst command', 'reply_markup' => $keyboard, 'chat_id' => $update->getCallbackQuery()->getMessage()->getChat()]);
 //        $this->replyWithMessage(['text' => $update->getMessage()->getChat()->getId(), 'reply_markup' => $keyboard]);
-        $this->replyWithMessage(['text' => $update->getUser()->getFirstName(), 'reply_markup' => $keyboard]);
+        $this->replyWithMessage(['text' => $update->getMessage()->getFrom()->getId(), 'reply_markup' => $keyboard]);
 
         //        $update = $this->getUpdate();
 //        $commands = $this->telegram->getCommands();
