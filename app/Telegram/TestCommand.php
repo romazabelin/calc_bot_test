@@ -57,9 +57,6 @@ class TestCommand extends Command
             'reply_markup' => $keyboard
         ]);
 
-        //Session::put('formMessageId', $message->getMessageId());
-//        session(['formMessageId' => $message->getMessageId()]);
-
         $this->replyWithMessage([
             'text' => $message->getMessageId()
         ]);
