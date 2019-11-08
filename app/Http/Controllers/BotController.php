@@ -20,15 +20,15 @@ class BotController extends Controller
         $query = $update->getCallbackQuery();
 
         if ($update->detectType() == 'callback_query' && $query->getId()) {
-            Telegram::sendMesage([
-                'chat_id' => $query->getMessage()->getChat()->getId(),
-                'text' => 'sdsdsds'
-            ]);
-//            Telegram::answerCallbackQuery([
-//                'text' => $query->getData() . ' ' . $query->getMessage()->getChat()->getId() . ' ' . $query->getId(),
-//                'callback_query_id' => $query->getId(),
-//                'show_alert' => true
+//            Telegram::sendMesage([
+//                'chat_id' => $query->getMessage()->getChat()->getId(),
+//                'text' => 'sdsdsds'
 //            ]);
+            Telegram::answerCallbackQuery([
+                'text' => $query->getData() . ' ' . $query->getMessage()->getChat()->getId() . ' ' . $query->getId(),
+                'callback_query_id' => $query->getId(),
+                'show_alert' => true
+            ]);
         } else {
             Telegram::commandsHandler(true);
         }
