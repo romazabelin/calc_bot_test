@@ -45,7 +45,7 @@ class BotController extends Controller
                     } else {
                         $newParamString = implode(";", $elements);
                     }
-                    //$newParamString .= $paramsString . $newKey . ';';
+                    $newParamString = '?params=' . $newParamString;
                 } else {
                     $newKey = str_replace('key_', '', $callbackData);
                     $newParamString .= '?params=' . $newKey . ';';
