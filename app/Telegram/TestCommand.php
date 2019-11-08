@@ -2,7 +2,6 @@
 
 namespace App\Telegram;
 
-use Illuminate\Support\Facades\Session;
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
 use Telegram\Bot\Keyboard\Keyboard;

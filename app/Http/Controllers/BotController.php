@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
 use Telegram\Bot\Keyboard\Keyboard;
 use Telegram;
 
@@ -41,12 +40,7 @@ class BotController extends Controller
 //                ->row(
 //                    Keyboard::inlineButton(['text' => $query->getData(), 'callback_data' => 'result'])
 //                );
-//
-//            Telegram::sendMessage([
-//                'chat_id' => $query->getFrom()->getId(),
-//                'text' => $query->getData(),
-//                'reply_markup' => $keyboard
-//            ]);
+
 //            Telegram::editMessageText([
 //                'message_id' => Session::get('formMessageId'),
 //                'text' => 'Update me',
