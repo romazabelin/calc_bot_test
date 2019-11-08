@@ -40,7 +40,6 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => '2', 'callback_data' => 'data']),
                 Keyboard::inlineButton(['text' => '3', 'callback_data' => 'data']),
                 Keyboard::inlineButton(['text' => '4', 'callback_data' => 'data']),
-                PHP_EOL,
                 Keyboard::inlineButton(['text' => '5', 'callback_data' => 'data']),
                 Keyboard::inlineButton(['text' => '6', 'callback_data' => 'data']),
                 Keyboard::inlineButton(['text' => '7', 'callback_data' => 'data']),
