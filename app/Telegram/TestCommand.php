@@ -51,7 +51,10 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => 'result'])
             );
 
-        $this->replyWithMessage(['text' => $update->getChat()->getId(), 'reply_markup' => $keyboard]);
+        $this->replyWithMessage([
+            //'text' => $update->getChat()->getId(),
+            'reply_markup' => $keyboard
+        ]);
 
         //$update->getMessage()->getChat()->getId()
         //        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName()]);
