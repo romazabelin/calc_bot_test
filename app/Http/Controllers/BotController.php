@@ -37,7 +37,7 @@ class BotController extends Controller
                     Keyboard::inlineButton(['text' => '/', 'callback_data' => '/'])
                 )
                 ->row(
-                    Keyboard::inlineButton(['text' => $query->getData(), 'callback_data' => ''])
+                    Keyboard::inlineButton(['text' => $query->getData(), 'callback_data' => 'result'])
                 );
 
             Telegram::sendMessage([
