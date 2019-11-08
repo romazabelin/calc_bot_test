@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/BotController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/BotController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Telegram/TestCommand.php" afterPath="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
     </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,8 +65,10 @@
       <file leaf-file-name="BotController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="32" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.5012285" vertical-offset="612" max-vertical-offset="1037">
-              <folding />
+            <state line="51" column="67" selection-start="2243" selection-end="2243" vertical-scroll-proportion="0.5012285" vertical-offset="663" max-vertical-offset="1088">
+              <folding>
+                <element signature="e#40#68#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,7 +76,7 @@
       <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="92" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-26.115385" vertical-offset="375" max-vertical-offset="1292">
+            <state line="62" column="60" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-6.5" vertical-offset="885" max-vertical-offset="1292">
               <folding>
                 <element signature="e#32#71#0" expanded="true" />
               </folding>
@@ -620,7 +623,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="92" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-26.115385" vertical-offset="375" max-vertical-offset="1292">
+        <state line="62" column="60" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-6.5" vertical-offset="885" max-vertical-offset="1292">
           <folding>
             <element signature="e#32#71#0" expanded="true" />
           </folding>
@@ -629,8 +632,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="32" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.5012285" vertical-offset="612" max-vertical-offset="1037">
-          <folding />
+        <state line="51" column="67" selection-start="2243" selection-end="2243" vertical-scroll-proportion="0.5012285" vertical-offset="663" max-vertical-offset="1088">
+          <folding>
+            <element signature="e#40#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

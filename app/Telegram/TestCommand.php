@@ -60,7 +60,7 @@ class TestCommand extends Command
         Session::put('formMessageId', $message->getMessageId());
 
         $this->replyWithMessage([
-            'text' => $message->getMessageId() . ' session ' . Session::get('formMessageId')
+            'text' => $message->getMessageId() . ' session '
         ]);
 
         //$update->getMessage()->getChat()->getId()
