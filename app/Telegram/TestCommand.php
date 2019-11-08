@@ -55,7 +55,7 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result'])
             )
             ->row(
-                Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => 'key_result'])
+                Keyboard::inlineButton(['text' => 'Start typing', 'callback_data' => 'key_result'])
             );
 
         $message = $this->replyWithMessage([

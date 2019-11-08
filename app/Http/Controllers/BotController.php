@@ -96,7 +96,7 @@ class BotController extends Controller
 //                if($elements) {
 //                    $waitingText = implode('', $elements);
 //                } else {
-//                    $waitingText = 'Waiting...';
+//                    $waitingText = 'Start typing';
 //                }
 
                 $keyboard = Keyboard::make()
@@ -122,7 +122,7 @@ class BotController extends Controller
                         Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result' . $newParamString])
                     )
                     ->row(
-                        Keyboard::inlineButton(['text' => $waitingText, 'callback_data' => 'key_result'])
+                        Keyboard::inlineButton(['text' => 'Start typing', 'callback_data' => 'key_result'])
                     );
 
                 Telegram::editMessageText([
