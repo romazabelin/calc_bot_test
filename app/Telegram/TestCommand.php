@@ -36,8 +36,15 @@ class TestCommand extends Command
         $keyboard = Keyboard::make()
             ->inline()
             ->row(
-                Keyboard::inlineButton(['text' => 'Test', 'callback_data' => 'data']),
-                Keyboard::inlineButton(['text' => 'Btn 2', 'callback_data' => 'data_from_btn2'])
+                Keyboard::inlineButton(['text' => '1', 'callback_data' => 'data']),
+                Keyboard::inlineButton(['text' => '2', 'callback_data' => 'data']),
+                Keyboard::inlineButton(['text' => '3', 'callback_data' => 'data']),
+                Keyboard::inlineButton(['text' => '4', 'callback_data' => 'data']),
+                Keyboard::inlineButton(['text' => '5', 'callback_data' => 'data']),
+                Keyboard::inlineButton(['text' => '6', 'callback_data' => 'data']),
+                Keyboard::inlineButton(['text' => '7', 'callback_data' => 'data']),
+                Keyboard::inlineButton(['text' => '8', 'callback_data' => 'data']),
+                Keyboard::inlineButton(['text' => '9', 'callback_data' => 'data'])
             );
 
 
