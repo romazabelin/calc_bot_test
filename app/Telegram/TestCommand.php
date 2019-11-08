@@ -34,18 +34,18 @@ class TestCommand extends Command
         $keyboard = Keyboard::make()
             ->inline()
             ->row(
-                Keyboard::inlineButton(['text' => '1', 'callback_data' => 'data']),
-                Keyboard::inlineButton(['text' => '2', 'callback_data' => 'data']),
-                Keyboard::inlineButton(['text' => '3', 'callback_data' => 'data']),
-                Keyboard::inlineButton(['text' => '+', 'callback_data' => 'dsd']),
-                Keyboard::inlineButton(['text' => '-', 'callback_data' => 'vfdc'])
+                Keyboard::inlineButton(['text' => '1', 'callback_data' => '1']),
+                Keyboard::inlineButton(['text' => '2', 'callback_data' => '2']),
+                Keyboard::inlineButton(['text' => '3', 'callback_data' => '3']),
+                Keyboard::inlineButton(['text' => '+', 'callback_data' => '+']),
+                Keyboard::inlineButton(['text' => '-', 'callback_data' => '-'])
             )
             ->row(
-                Keyboard::inlineButton(['text' => '4', 'callback_data' => 'sds']),
-                Keyboard::inlineButton(['text' => '5', 'callback_data' => 'sdsd']),
-                Keyboard::inlineButton(['text' => '6', 'callback_data' => 'sdds']),
-                Keyboard::inlineButton(['text' => '*', 'callback_data' => 'sdsds']),
-                Keyboard::inlineButton(['text' => '/', 'callback_data' => 'sdsdsds'])
+                Keyboard::inlineButton(['text' => '4', 'callback_data' => '6']),
+                Keyboard::inlineButton(['text' => '5', 'callback_data' => '7']),
+                Keyboard::inlineButton(['text' => '6', 'callback_data' => '8']),
+                Keyboard::inlineButton(['text' => '*', 'callback_data' => '*']),
+                Keyboard::inlineButton(['text' => '/', 'callback_data' => '/'])
             );
 
         $this->replyWithMessage(['text' => $update->getChat()->getId(), 'reply_markup' => $keyboard]);
