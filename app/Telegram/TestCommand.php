@@ -22,7 +22,7 @@ class TestCommand extends Command
     /**
      * @var string Command Description
      */
-    protected $description = 'Test command, Get a list of commands';
+    protected $description = 'Press me!';
 
     /**
      * {@inheritdoc}
@@ -31,17 +31,19 @@ class TestCommand extends Command
     {
         $update = Telegram::getWebhookUpdates();
 
-        $keyboard = Keyboard::make()
-            ->inline()
-            ->row(
-                Keyboard::inlineButton(['text' => 'Test', 'callback_data' => 'data']),
-                Keyboard::inlineButton(['text' => 'Btn 2', 'callback_data' => 'data_from_btn2'])
-            );
+        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName()]);
+
+//        $keyboard = Keyboard::make()
+//            ->inline()
+//            ->row(
+//                Keyboard::inlineButton(['text' => 'Test', 'callback_data' => 'data']),
+//                Keyboard::inlineButton(['text' => 'Btn 2', 'callback_data' => 'data_from_btn2'])
+//            );
 
 
 //        Telegram::sendMessage(['text' => 'ssst command', 'reply_markup' => $keyboard, 'chat_id' => $update->getCallbackQuery()->getMessage()->getChat()]);
 //        $this->replyWithMessage(['text' => $update->getMessage()->getChat()->getId(), 'reply_markup' => $keyboard]);
-        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName(), 'reply_markup' => $keyboard]);
+
 
         //        $update = $this->getUpdate();
 //        $commands = $this->telegram->getCommands();
