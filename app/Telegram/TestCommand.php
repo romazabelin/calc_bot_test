@@ -39,15 +39,15 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => '1', 'callback_data' => 'data']),
                 Keyboard::inlineButton(['text' => '2', 'callback_data' => 'data']),
                 Keyboard::inlineButton(['text' => '3', 'callback_data' => 'data']),
-                Keyboard::inlineButton(['text' => '+', 'callback_data' => '']),
+                Keyboard::inlineButton(['text' => '+', 'callback_data' => 'dsd']),
                 Keyboard::inlineButton(['text' => '-', 'callback_data' => ''])
             )
             ->row(
                 Keyboard::inlineButton(['text' => '4', 'callback_data' => 'sds']),
-                Keyboard::inlineButton(['text' => '5', 'callback_data' => '']),
-                Keyboard::inlineButton(['text' => '6', 'callback_data' => '']),
-                Keyboard::inlineButton(['text' => '*', 'callback_data' => '']),
-                Keyboard::inlineButton(['text' => '/', 'callback_data' => ''])
+                Keyboard::inlineButton(['text' => '5', 'callback_data' => 'sdsd']),
+                Keyboard::inlineButton(['text' => '6', 'callback_data' => 'sdds']),
+                Keyboard::inlineButton(['text' => '*', 'callback_data' => 'sdsds']),
+                Keyboard::inlineButton(['text' => '/', 'callback_data' => 'sdsdsds'])
             );
 //        Telegram::sendMessage(['text' => 'ssst command', 'reply_markup' => $keyboard, 'chat_id' => $update->getCallbackQuery()->getMessage()->getChat()]);
         $this->replyWithMessage(['text' => $update->getMessage()->getChat()->getId(), 'reply_markup' => $keyboard]);
