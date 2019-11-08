@@ -27,12 +27,42 @@ class BotController extends Controller
                 $newParamString = '';
                 $pos =  strpos($callbackData, '?params');
 
-                if (strpos($callbackData, 'key_calc_result') !== false) {} else {
+                if (strpos($callbackData, 'key_calc_result') !== false) {
                     if ($pos !== false) {
                         $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
                         $queryParams = str_replace('?params=', '', $paramsString);
                         $elements = array_filter(explode(';', $queryParams));
 
+                        if (count($elements) >= 3) {
+                            $execOperation = implode('', $elements);
+
+                            if(preg_match('/(\d+)(?:\s*)([\+\-\*\/])(?:\s*)(\d+)/', $execOperation, $matches) !== FALSE){
+                                $operator = $matches[2];
+
+                                switch($operator) {
+                                    case '+':
+                                        $resOperation = $matches[1] + $matches[3];
+                                        break;
+                                    case '-':
+                                        $resOperation = $matches[1] - $matches[3];
+                                        break;
+                                    case '*':
+                                        $resOperation = $matches[1] * $matches[3];
+                                        break;
+                                    case '/':
+                                        $resOperation = $matches[1] / $matches[3];
+                                        break;
+                                }
+
+                                $newParamString .= '?params=' . $resOperation . ';';
+                            }
+                        } else {}
+                    }
+                } else {
+                    if ($pos !== false) {
+                        $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
+                        $queryParams = str_replace('?params=', '', $paramsString);
+                        $elements = array_filter(explode(';', $queryParams));
                         $newKey = str_replace('key_', '', substr($callbackData, 0, $pos));
 
                         if ($newKey == '+' || $newKey == '-' || $newKey == '*' || $newKey == '/') {
