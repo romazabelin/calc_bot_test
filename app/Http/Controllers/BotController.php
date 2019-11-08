@@ -23,35 +23,37 @@ class BotController extends Controller
 //                'show_alert' => true
 //            ]);
 
-            if(strpos($callbackData, 'calc_result') === false && strpos($callbackData, 'key_result') === false) {
+            if(strpos($callbackData, 'key_result') === false) {
                 $newParamString = '';
                 $pos =  strpos($callbackData, '?params');
 
                 if ($pos !== false) {
-                    $newKey = str_replace('key_', '', substr($callbackData, 0, $pos));
-                    $paramsString =  substr($callbackData, $pos, strlen($callbackData)-1);
-
+                    $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
                     $queryParams = str_replace('?params=', '', $paramsString);
                     $elements = array_filter(explode(';', $queryParams));
 
-                    if ($newKey == '+' || $newKey == '-' || $newKey == '*' || $newKey == '/') {
-                        if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
-                            $elements[] = $newKey;
-                        }
-                    } else {
-                        if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
-                            $elements[count($elements) - 1] = $elements[count($elements) - 1] . $newKey;
-                        } else {
-                            $elements[] = $newKey;
-                        }
-                    }
+                    if (strpos($callbackData, 'key_calc_result') !== false) {} else {
+                        $newKey = str_replace('key_', '', substr($callbackData, 0, $pos));
 
-                    if (count($elements) == 1) {
-                        $newParamString = $elements[count($elements) - 1] . ';';
-                    } else {
-                        $newParamString = implode(";", $elements);
+                        if ($newKey == '+' || $newKey == '-' || $newKey == '*' || $newKey == '/') {
+                            if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
+                                $elements[] = $newKey;
+                            }
+                        } else {
+                            if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
+                                $elements[count($elements) - 1] = $elements[count($elements) - 1] . $newKey;
+                            } else {
+                                $elements[] = $newKey;
+                            }
+                        }
+
+                        if (count($elements) == 1) {
+                            $newParamString = $elements[count($elements) - 1] . ';';
+                        } else {
+                            $newParamString = implode(";", $elements);
+                        }
+                        $newParamString = '?params=' . $newParamString;
                     }
-                    $newParamString = '?params=' . $newParamString;
                 } else {
                     $newKey = str_replace('key_', '', $callbackData);
                     if ($newKey != '+' && $newKey != '-' && $newKey != '*' && $newKey != '/') {
@@ -79,7 +81,7 @@ class BotController extends Controller
                         Keyboard::inlineButton(['text' => '7', 'callback_data' => 'key_7' . $newParamString]),
                         Keyboard::inlineButton(['text' => '8', 'callback_data' => 'key_8' . $newParamString]),
                         Keyboard::inlineButton(['text' => '9', 'callback_data' => 'key_9' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result'])
+                        Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result' . $newParamString])
                     )
                     ->row(
                         Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => 'key_result'])
