@@ -48,7 +48,7 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => '/', 'callback_data' => '/'])
             )
             ->row(
-                Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => ''])
+                Keyboard::inlineButton(['text' => 'Waiting...', 'callback_data' => 'key'])
             );
 
         $this->replyWithMessage(['text' => $update->getChat()->getId(), 'reply_markup' => $keyboard]);

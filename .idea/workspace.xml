@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="" />
+    <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Telegram/TestCommand.php" afterPath="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
+    </list>
     <ignored path="calculator_bot.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,7 +75,7 @@
       <file leaf-file-name="BotController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="17" selection-start="1633" selection-end="1633" vertical-scroll-proportion="-7.8846154" vertical-offset="424" max-vertical-offset="986">
+            <state line="45" column="16" selection-start="1928" selection-end="1928" vertical-scroll-proportion="-11.153846" vertical-offset="475" max-vertical-offset="986">
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -84,7 +86,7 @@
       <file leaf-file-name="TestCommand.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="71" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.66059226" vertical-offset="560" max-vertical-offset="1122">
+            <state line="50" column="87" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.66059226" vertical-offset="560" max-vertical-offset="1122">
               <folding>
                 <element signature="e#32#57#0" expanded="true" />
               </folding>
@@ -114,8 +116,8 @@
         <option value="$PROJECT_DIR$/config/telegram.php" />
         <option value="$PROJECT_DIR$/app/Telegram/BlaCommand.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BotController.php" />
+        <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
       </list>
     </option>
   </component>
@@ -665,7 +667,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="1633" selection-end="1633" vertical-scroll-proportion="-7.8846154" vertical-offset="424" max-vertical-offset="986">
+        <state line="45" column="16" selection-start="1928" selection-end="1928" vertical-scroll-proportion="-11.153846" vertical-offset="475" max-vertical-offset="986">
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>
@@ -674,7 +676,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="71" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.66059226" vertical-offset="560" max-vertical-offset="1122">
+        <state line="50" column="87" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.66059226" vertical-offset="560" max-vertical-offset="1122">
           <folding>
             <element signature="e#32#57#0" expanded="true" />
           </folding>
