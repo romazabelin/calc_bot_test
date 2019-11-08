@@ -64,7 +64,7 @@
       <file leaf-file-name="Keyboard.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Keyboard/Keyboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="6" selection-start="1439" selection-end="1439" vertical-scroll-proportion="-1.5098039" vertical-offset="1011" max-vertical-offset="3417">
+            <state line="142" column="27" selection-start="3439" selection-end="3439" vertical-scroll-proportion="-2.509804" vertical-offset="2286" max-vertical-offset="3417">
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="TestCommand.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="82" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.66909975" vertical-offset="609" max-vertical-offset="1309">
+            <state line="50" column="14" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.25547445" vertical-offset="745" max-vertical-offset="1224">
               <folding>
                 <element signature="e#32#57#0" expanded="true" />
               </folding>
@@ -391,7 +391,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="43" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="527">
           <folding>
-            <element signature="e#6#388#0" expanded="true" />
+            <element signature="e#6#388#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -440,7 +440,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="29" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="680">
           <folding>
-            <element signature="e#6#388#0" expanded="true" />
+            <element signature="e#6#388#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -475,7 +475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="59" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="680">
           <folding>
-            <element signature="e#6#388#0" expanded="true" />
+            <element signature="e#6#388#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -591,7 +591,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="29" selection-start="523" selection-end="540" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="493">
           <folding>
-            <element signature="e#6#388#0" expanded="true" />
+            <element signature="e#6#388#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -654,14 +654,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk/src/Keyboard/Keyboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="6" selection-start="1439" selection-end="1439" vertical-scroll-proportion="-1.5098039" vertical-offset="1011" max-vertical-offset="3417">
+        <state line="142" column="27" selection-start="3439" selection-end="3439" vertical-scroll-proportion="-2.509804" vertical-offset="2286" max-vertical-offset="3417">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="82" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.66909975" vertical-offset="609" max-vertical-offset="1309">
+        <state line="50" column="14" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.25547445" vertical-offset="745" max-vertical-offset="1224">
           <folding>
             <element signature="e#32#57#0" expanded="true" />
           </folding>
