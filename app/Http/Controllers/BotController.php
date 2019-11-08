@@ -27,12 +27,12 @@ class BotController extends Controller
                 $newParamString = '';
                 $pos =  strpos($callbackData, '?params');
 
-                if ($pos !== false) {
-                    $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
-                    $queryParams = str_replace('?params=', '', $paramsString);
-                    $elements = array_filter(explode(';', $queryParams));
+                if (strpos($callbackData, 'key_calc_result') !== false) {} else {
+                    if ($pos !== false) {
+                        $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
+                        $queryParams = str_replace('?params=', '', $paramsString);
+                        $elements = array_filter(explode(';', $queryParams));
 
-                    if (strpos($callbackData, 'key_calc_result') !== false) {} else {
                         $newKey = str_replace('key_', '', substr($callbackData, 0, $pos));
 
                         if ($newKey == '+' || $newKey == '-' || $newKey == '*' || $newKey == '/') {
@@ -53,11 +53,11 @@ class BotController extends Controller
                             $newParamString = implode(";", $elements);
                         }
                         $newParamString = '?params=' . $newParamString;
-                    }
-                } else {
-                    $newKey = str_replace('key_', '', $callbackData);
-                    if ($newKey != '+' && $newKey != '-' && $newKey != '*' && $newKey != '/') {
-                        $newParamString .= '?params=' . $newKey . ';';
+                    } else {
+                        $newKey = str_replace('key_', '', $callbackData);
+                        if ($newKey != '+' && $newKey != '-' && $newKey != '*' && $newKey != '/') {
+                            $newParamString .= '?params=' . $newKey . ';';
+                        }
                     }
                 }
 
