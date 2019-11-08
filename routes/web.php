@@ -16,6 +16,8 @@ Route::get('/', function () {
 
 Route::post('/webhook', 'BotController@webhookHandler');
 
+Route::get('/updated-activity', 'BotController@updatedActivity');
+
 //$response = Telegram::getMe();
 //echo $botId = $response->getId();
 //$firstName = $response->getFirstName();

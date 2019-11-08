@@ -7,6 +7,13 @@ use Telegram;
 
 class BotController extends Controller
 {
+
+    public function updatedActivity()
+    {
+        $activity = Telegram::getWebhookUpdates();
+        echo '<pre>';print_r($activity);
+    }
+
     public function webhookHandler()
     {
 
