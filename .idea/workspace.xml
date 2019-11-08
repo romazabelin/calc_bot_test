@@ -64,7 +64,7 @@
       <file leaf-file-name="BotController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="53" selection-start="2229" selection-end="2229" vertical-scroll-proportion="0.87469286" vertical-offset="460" max-vertical-offset="1037">
+            <state line="51" column="32" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.5012285" vertical-offset="612" max-vertical-offset="1037">
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="92" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-18.26923" vertical-offset="579" max-vertical-offset="1292">
+            <state line="62" column="92" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-26.115385" vertical-offset="375" max-vertical-offset="1292">
               <folding>
                 <element signature="e#32#71#0" expanded="true" />
               </folding>
@@ -620,7 +620,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="92" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-18.26923" vertical-offset="579" max-vertical-offset="1292">
+        <state line="62" column="92" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-26.115385" vertical-offset="375" max-vertical-offset="1292">
           <folding>
             <element signature="e#32#71#0" expanded="true" />
           </folding>
@@ -629,7 +629,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="53" selection-start="2229" selection-end="2229" vertical-scroll-proportion="0.87469286" vertical-offset="460" max-vertical-offset="1037">
+        <state line="51" column="32" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.5012285" vertical-offset="612" max-vertical-offset="1037">
           <folding />
         </state>
       </provider>
