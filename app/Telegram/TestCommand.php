@@ -2,6 +2,7 @@
 
 namespace App\Telegram;
 
+use Illuminate\Support\Facades\Session;
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
 use Telegram\Bot\Keyboard\Keyboard;
@@ -57,9 +58,7 @@ class TestCommand extends Command
             'reply_markup' => $keyboard
         ]);
 
-        $this->replyWithMessage([
-            'text' => 'MessageId' . $message->getMessageId()
-        ]);
+        Session::pull('formMessageId', $message->getMessageId());
 
         //$update->getMessage()->getChat()->getId()
         //        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName()]);
