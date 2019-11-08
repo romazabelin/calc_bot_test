@@ -14,17 +14,18 @@ class BotController extends Controller
         $query = $update->getCallbackQuery();
 
         if ($update->isType('callback_query') && $query->getId()) {
-            Telegram::answerCallbackQuery([
-                'text' => $query->getData() . ' ' . $query->getFrom()->getId() . ' ' . $query->getId(),
-                'callback_query_id' => $query->getId(),
-                'show_alert' => true
+//            Telegram::answerCallbackQuery([
+//                'text' => $query->getData() . ' ' . $query->getFrom()->getId() . ' ' . $query->getId(),
+//                'callback_query_id' => $query->getId(),
+//                'show_alert' => true
+//            ]);
+            Telegram\Bot\Laravel\Facades\Telegram::sendMessage([
+                'chat_id' => $query->getFrom()->getId(),
+                'text' => $query->getData()
             ]);
         } else {
             Telegram::commandsHandler(true);
         }
-
-
-
 
 //        $update = Telegram::getWebhookUpdates();
 //        $query = $update->getCallbackQuery();
