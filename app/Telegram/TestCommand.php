@@ -30,6 +30,7 @@ class TestCommand extends Command
     public function handle($arguments)
     {
         $update = $this->getUpdate();
+        //$update->getChat()->getId()
 
         $keyboard = Keyboard::make()
             ->inline()
@@ -52,7 +53,7 @@ class TestCommand extends Command
             );
 
         $this->replyWithMessage([
-            //'text' => $update->getChat()->getId(),
+            'text' => 'Lets Go',
             'reply_markup' => $keyboard
         ]);
 

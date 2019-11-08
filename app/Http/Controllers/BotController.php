@@ -42,6 +42,7 @@ class BotController extends Controller
 
             Telegram::sendMessage([
                 'chat_id' => $query->getFrom()->getId(),
+                'text' => $query->getData(),
                 'reply_markup' => $keyboard
             ]);
         } else {
