@@ -29,6 +29,8 @@ class TestCommand extends Command
      */
     public function handle($arguments)
     {
+        $update = Telegram::getWebhookUpdates();
+        
         $keyboard = Keyboard::make()
             ->inline()
             ->row(

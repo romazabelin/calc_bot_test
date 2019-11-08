@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72c6265-ac57-4119-b6e3-4956c0678a7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/BotController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/BotController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Telegram/TestCommand.php" afterPath="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
     </list>
     <ignored path="calculator_bot.iws" />
@@ -80,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCommand.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestCommand.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="5" selection-start="563" selection-end="563" vertical-scroll-proportion="-2.0769231" vertical-offset="456" max-vertical-offset="1156">
+            <state line="32" column="8" selection-start="621" selection-end="621" vertical-scroll-proportion="0.33819953" vertical-offset="405" max-vertical-offset="1190">
               <folding>
                 <element signature="e#32#57#0" expanded="true" />
               </folding>
@@ -91,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BotController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BotController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="40" selection-start="565" selection-end="565" vertical-scroll-proportion="0.5790754" vertical-offset="170" max-vertical-offset="833">
+            <state line="20" column="8" selection-start="362" selection-end="402" vertical-scroll-proportion="-5.8846154" vertical-offset="170" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
@@ -121,8 +120,8 @@
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BotController.php" />
+        <option value="$PROJECT_DIR$/app/Telegram/TestCommand.php" />
       </list>
     </option>
   </component>
@@ -662,19 +661,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="563" selection-end="563" vertical-scroll-proportion="-2.0769231" vertical-offset="456" max-vertical-offset="1156">
-          <folding>
-            <element signature="e#32#57#0" expanded="true" />
-          </folding>
+        <state line="20" column="8" selection-start="362" selection-end="402" vertical-scroll-proportion="-5.8846154" vertical-offset="170" max-vertical-offset="833">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
+    <entry file="file://$PROJECT_DIR$/app/Telegram/TestCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="40" selection-start="565" selection-end="565" vertical-scroll-proportion="0.5790754" vertical-offset="170" max-vertical-offset="833">
-          <folding />
+        <state line="32" column="8" selection-start="621" selection-end="621" vertical-scroll-proportion="0.33819953" vertical-offset="405" max-vertical-offset="1190">
+          <folding>
+            <element signature="e#32#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
