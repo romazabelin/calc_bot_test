@@ -163,10 +163,10 @@ class BotController extends Controller
                     'chat_id' => $query->getFrom()->getId(),
                     'reply_markup' => $keyboard
                 ]);
-                Telegram::sendMessage([
-                    'text' => 'Para,s:' . $newParamString,
-                    'chat_id' => $query->getFrom()->getId()
-                ]);
+//                Telegram::sendMessage([
+//                    'text' => 'Para,s:' . $newParamString,
+//                    'chat_id' => $query->getFrom()->getId()
+//                ]);
             } else {
             }
         } else {
