@@ -60,6 +60,8 @@ class BotController extends Controller
                             $newParamString = $paramsString;
                         }
                     }
+                } else if (strpos($callbackData, 'key_clear') !== false) {
+                    $newParamString = '';
                 } else {
                     if ($pos !== false) {
                         $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
@@ -124,6 +126,7 @@ class BotController extends Controller
                         Keyboard::inlineButton(['text' => '7', 'callback_data' => 'key_7' . $newParamString]),
                         Keyboard::inlineButton(['text' => '8', 'callback_data' => 'key_8' . $newParamString]),
                         Keyboard::inlineButton(['text' => '9', 'callback_data' => 'key_9' . $newParamString]),
+                        Keyboard::inlineButton(['text' => 'C', 'callback_data' => 'key_clear']),
                         Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result' . $newParamString])
                     )
                     ->row(
@@ -132,7 +135,7 @@ class BotController extends Controller
 
                 Telegram::editMessageText([
                     'message_id' => $query->getMessage()->getMessageId(),
-                    'text' => 'Update me',
+                    'text' => 'Lets Go',
                     'chat_id' => $query->getFrom()->getId(),
                     'reply_markup' => $keyboard
                 ]);

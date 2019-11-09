@@ -52,6 +52,7 @@ class TestCommand extends Command
                 Keyboard::inlineButton(['text' => '7', 'callback_data' => 'key_7']),
                 Keyboard::inlineButton(['text' => '8', 'callback_data' => 'key_8']),
                 Keyboard::inlineButton(['text' => '9', 'callback_data' => 'key_9']),
+                Keyboard::inlineButton(['text' => 'C', 'callback_data' => 'key_clear']),
                 Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result'])
             )
             ->row(
