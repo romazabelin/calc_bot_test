@@ -93,8 +93,9 @@ class BotController extends Controller
                     }
                 }
 
-                if ($pos !== false) {
-                    $paramsString = substr($newParamString, $pos, strlen($newParamString) - 1);
+                $posNewParams = strpos($newParamString, '?params');
+                if ($posNewParams !== false) {
+                    $paramsString = substr($newParamString, $posNewParams, strlen($newParamString) - 1);
                     $queryParams = str_replace('?params=', '', $paramsString);
                     $waitingText = implode('', array_filter(explode(';', $queryParams)));
                 } else {

@@ -64,7 +64,7 @@
       <file leaf-file-name="BotController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="88" selection-start="4577" selection-end="4577" vertical-scroll-proportion="0.50124687" vertical-offset="1431" max-vertical-offset="2584">
+            <state line="97" column="73" selection-start="4639" selection-end="4639" vertical-scroll-proportion="0.37406483" vertical-offset="1499" max-vertical-offset="2601">
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -522,7 +522,9 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="369" column="9" selection-start="9275" selection-end="9275" vertical-scroll-proportion="0.3721973" vertical-offset="6190" max-vertical-offset="17340" />
+        <state line="369" column="9" selection-start="9275" selection-end="9275" vertical-scroll-proportion="0.3721973" vertical-offset="6190" max-vertical-offset="17340">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Telegram/BlaCommand.php">
@@ -608,7 +610,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="88" selection-start="4577" selection-end="4577" vertical-scroll-proportion="0.50124687" vertical-offset="1431" max-vertical-offset="2584">
+        <state line="97" column="73" selection-start="4639" selection-end="4639" vertical-scroll-proportion="0.37406483" vertical-offset="1499" max-vertical-offset="2601">
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>
