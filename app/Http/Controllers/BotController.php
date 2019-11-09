@@ -58,10 +58,6 @@ class BotController extends Controller
                             }
                         } else {
                             $newParamString = $paramsString;
-                            Telegram::sendMessage([
-                                'text' => 'ddd: ' . $newParamString,
-                                'chat_id' => $query->getFrom()->getId()
-                            ]);
                         }
                     }
                 } else {
@@ -97,11 +93,11 @@ class BotController extends Controller
                     }
                 }
 
-//                if($elements) {
-//                    $waitingText = implode('', $elements);
-//                } else {
-//                    $waitingText = 'Start typing';
-//                }
+                if($elements) {
+                    $waitingText = implode('', $elements);
+                } else {
+                    $waitingText = 'Start typing';
+                }
 
                 $keyboard = Keyboard::make()
                     ->inline()
