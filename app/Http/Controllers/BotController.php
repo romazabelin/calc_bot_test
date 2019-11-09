@@ -34,28 +34,27 @@ class BotController extends Controller
                         $elements = array_filter(explode(';', $queryParams));
 
                         if (count($elements) == 3) {
-                            $execOperation = implode('', $elements);
+                            $resOperation = eval("return(" . implode('', $elements) . ")");
+                            $newParamString .= '?params=' . $resOperation . ';';
 
-                            if(preg_match('/(\d+)(?:\s*)([\+\-\*\/])(?:\s*)(\d+)/', $execOperation, $matches) !== FALSE){
-                                $operator = $matches[2];
-
-                                switch($operator) {
-                                    case '+':
-                                        $resOperation = $matches[1] + $matches[3];
-                                        break;
-                                    case '-':
-                                        $resOperation = $matches[1] - $matches[3];
-                                        break;
-                                    case '*':
-                                        $resOperation = $matches[1] * $matches[3];
-                                        break;
-                                    case '/':
-                                        $resOperation = $matches[1] / $matches[3];
-                                        break;
-                                }
-
-                                $newParamString .= '?params=' . $resOperation . ';';
-                            }
+//                            if(preg_match('/(\d+)(?:\s*)([\+\-\*\/])(?:\s*)(\d+)/', $execOperation, $matches) !== FALSE){
+//                                $operator = $matches[2];
+//
+//                                switch($operator) {
+//                                    case '+':
+//                                        $resOperation = $matches[1] + $matches[3];
+//                                        break;
+//                                    case '-':
+//                                        $resOperation = $matches[1] - $matches[3];
+//                                        break;
+//                                    case '*':
+//                                        $resOperation = $matches[1] * $matches[3];
+//                                        break;
+//                                    case '/':
+//                                        $resOperation = $matches[1] / $matches[3];
+//                                        break;
+//                                }
+//                            }
                         } else {
                             $newParamString = $paramsString;
                         }
@@ -71,30 +70,29 @@ class BotController extends Controller
 
                         if ($newKey == '+' || $newKey == '-' || $newKey == '*' || $newKey == '/') {
                             if (count($elements) == 3) {
-                                $execOperation = implode('', $elements);
+                                $resOperation = eval("return(" . implode('', $elements) . ")");
+                                $elements = [];
+                                $elements[] = $resOperation;
+                                $elements[] = $newKey;
 
-                                if(preg_match('/(\d+)(?:\s*)([\+\-\*\/])(?:\s*)(\d+)/', $execOperation, $matches) !== FALSE){
-                                    $operator = $matches[2];
-
-                                    switch($operator) {
-                                        case '+':
-                                            $resOperation = $matches[1] + $matches[3];
-                                            break;
-                                        case '-':
-                                            $resOperation = $matches[1] - $matches[3];
-                                            break;
-                                        case '*':
-                                            $resOperation = $matches[1] * $matches[3];
-                                            break;
-                                        case '/':
-                                            $resOperation = $matches[1] / $matches[3];
-                                            break;
-                                    }
-
-                                    $elements = [];
-                                    $elements[] = $resOperation;
-                                    $elements[] = $newKey;
-                                }
+//                                if(preg_match('/(\d+)(?:\s*)([\+\-\*\/])(?:\s*)(\d+)/', $execOperation, $matches) !== FALSE){
+//                                    $operator = $matches[2];
+//
+//                                    switch($operator) {
+//                                        case '+':
+//                                            $resOperation = $matches[1] + $matches[3];
+//                                            break;
+//                                        case '-':
+//                                            $resOperation = $matches[1] - $matches[3];
+//                                            break;
+//                                        case '*':
+//                                            $resOperation = $matches[1] * $matches[3];
+//                                            break;
+//                                        case '/':
+//                                            $resOperation = $matches[1] / $matches[3];
+//                                            break;
+//                                    }
+//                                }
                             } else {
                                 if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
                                     $elements[] = $newKey;
