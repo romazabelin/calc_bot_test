@@ -61,7 +61,7 @@ class BotController extends Controller
                         }
                     }
                 } else if (strpos($callbackData, 'key_clear') !== false) {
-                    $newParamString = '';
+                    //$newParamString = '';
                 } else {
                     if ($pos !== false) {
                         $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
