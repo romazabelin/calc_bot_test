@@ -116,7 +116,7 @@ class BotController extends Controller
                         Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result' . $newParamString])
                     )
                     ->row(
-                        Keyboard::inlineButton(['text' => ($elements) ? implode('', $elements) : 'Start typing', 'callback_data' => 'key_result'])
+                        Keyboard::inlineButton(['text' => 'Start typing', 'callback_data' => 'key_result'])
                     );
 
                 Telegram::editMessageText([
