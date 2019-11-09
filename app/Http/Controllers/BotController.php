@@ -90,7 +90,8 @@ class BotController extends Controller
                                             $resOperation = $matches[1] / $matches[3];
                                             break;
                                     }
-                                    
+
+                                    $elements = [];
                                     $elements[] = $resOperation;
                                     $elements[] = $newKey;
                                 }
