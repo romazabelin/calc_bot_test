@@ -34,7 +34,7 @@ class BotController extends Controller
                         $elements = array_filter(explode(';', $queryParams));
 
                         if (count($elements) == 3) {
-                            $resOperation = eval("return(" . implode('', $elements) . ")");
+                            $resOperation = eval("return(" . implode('', $elements) . ");");
                             $newParamString .= '?params=' . $resOperation . ';';
 
 //                            if(preg_match('/(\d+)(?:\s*)([\+\-\*\/])(?:\s*)(\d+)/', $execOperation, $matches) !== FALSE){
@@ -70,7 +70,7 @@ class BotController extends Controller
 
                         if ($newKey == '+' || $newKey == '-' || $newKey == '*' || $newKey == '/') {
                             if (count($elements) == 3) {
-                                $resOperation = eval("return(" . implode('', $elements) . ")");
+                                $resOperation = eval("return(" . implode('', $elements) . ");");
                                 $elements = [];
                                 $elements[] = $resOperation;
                                 $elements[] = $newKey;
