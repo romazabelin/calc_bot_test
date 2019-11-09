@@ -95,10 +95,10 @@ class BotController extends Controller
 
                 $posNewParams = strpos($newParamString, '?params');
                 if ($posNewParams !== false) {
-//                    $paramsString = substr($newParamString, $posNewParams, strlen($newParamString) - 1);
-//                    $queryParams = str_replace('?params=', '', $paramsString);
+                    $paramsString = substr($newParamString, $posNewParams, strlen($newParamString) - 1);
+                    $queryParams = str_replace('?params=', '', $paramsString);
 //                    $waitingText = implode('', array_filter(explode(';', $queryParams)));
-                    $waitingText = $newParamString;
+                    $waitingText = $newParamString . ' ' . str_replace(';', '', $queryParams);
                 } else {
                     $waitingText = 'Start typing';
                 }
