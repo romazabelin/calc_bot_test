@@ -60,7 +60,7 @@ class TestCommand extends Command
             );
 
         $message = $this->replyWithMessage([
-            'text' => 'Lets Go',
+            'text' => 'Ok. It is my first telegram bot',
             'reply_markup' => $keyboard
         ]);
 
