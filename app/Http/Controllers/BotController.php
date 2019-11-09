@@ -93,11 +93,11 @@ class BotController extends Controller
                     }
                 }
 
-                if($elements) {
-                    $waitingText = implode('', $elements);
-                } else {
-                    $waitingText = 'Start typing';
-                }
+//                if($elements) {
+//                    $waitingText = implode('', $elements);
+//                } else {
+//                    $waitingText = 'Start typing';
+//                }
 
                 $keyboard = Keyboard::make()
                     ->inline()

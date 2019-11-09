@@ -64,7 +64,7 @@
       <file leaf-file-name="BotController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="48" selection-start="5011" selection-end="5011" vertical-scroll-proportion="-0.16666667" vertical-offset="1873" max-vertical-offset="2550">
+            <state line="99" column="19" selection-start="4476" selection-end="4645" vertical-scroll-proportion="0.6314554" vertical-offset="1414" max-vertical-offset="2550">
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -608,7 +608,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BotController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="48" selection-start="5011" selection-end="5011" vertical-scroll-proportion="-0.16666667" vertical-offset="1873" max-vertical-offset="2550">
+        <state line="99" column="19" selection-start="4476" selection-end="4645" vertical-scroll-proportion="0.6314554" vertical-offset="1414" max-vertical-offset="2550">
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>
