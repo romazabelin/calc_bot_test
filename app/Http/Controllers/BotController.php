@@ -25,7 +25,6 @@ class BotController extends Controller
 
             if(strpos($callbackData, 'key_result') === false) {
                 $newParamString = '';
-                $elements = [];
                 $pos =  strpos($callbackData, '?params');
 
                 if (strpos($callbackData, 'key_calc_result') !== false) {
@@ -117,7 +116,7 @@ class BotController extends Controller
                         Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result' . $newParamString])
                     )
                     ->row(
-                        Keyboard::inlineButton(['text' => ($elements) ? implode('', $elements) : 'Start typing', 'callback_data' => 'key_result'])
+                        Keyboard::inlineButton(['text' => ($newParamString) ? $newParamString : 'Start typing', 'callback_data' => 'key_result'])
                     );
 
                 Telegram::editMessageText([
