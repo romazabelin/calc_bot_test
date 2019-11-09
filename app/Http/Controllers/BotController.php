@@ -58,6 +58,10 @@ class BotController extends Controller
                             }
                         } else {
                             $newParamString = $paramsString;
+                            Telegram::sendMessage([
+                                'text' => 'ddd: ' . $newParamString,
+                                'chat_id' => $query->getFrom()->getId()
+                            ]);
                         }
                     }
                 } else {
