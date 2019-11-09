@@ -25,6 +25,7 @@ class BotController extends Controller
 
             if(strpos($callbackData, 'key_result') === false) {
                 $newParamString = '';
+                $elements = [];
                 $pos =  strpos($callbackData, '?params');
 
                 if (strpos($callbackData, 'key_calc_result') !== false) {
