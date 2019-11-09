@@ -94,7 +94,7 @@ class BotController extends Controller
                 }
 
                 if ($pos !== false) {
-                    $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
+                    $paramsString = substr($newParamString, $pos, strlen($newParamString) - 1);
                     $queryParams = str_replace('?params=', '', $paramsString);
                     $waitingText = implode('', array_filter(explode(';', $queryParams)));
                 } else {
