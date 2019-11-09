@@ -159,7 +159,7 @@ class BotController extends Controller
 
                 Telegram::editMessageText([
                     'message_id' => $query->getMessage()->getMessageId(),
-                    'text' => 'Ok. It is my first telegram bot',
+                    'text' => 'Ok. It is my first telegram bot. Try free for 30 days:)',
                     'chat_id' => $query->getFrom()->getId(),
                     'reply_markup' => $keyboard
                 ]);
