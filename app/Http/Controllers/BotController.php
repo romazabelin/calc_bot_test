@@ -61,7 +61,7 @@ class BotController extends Controller
                         }
                     }
                 } else if (strpos($callbackData, 'key_clear') !== false) {
-                    //$newParamString = '';
+                    $newParamString = '';
                 } else {
                     if ($pos !== false) {
                         $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
@@ -97,9 +97,6 @@ class BotController extends Controller
 
                 $posNewParams = strpos($newParamString, '?params');
                 if ($posNewParams !== false) {
-                    //$paramsString = substr($newParamString, $posNewParams, strlen($newParamString) - 1);
-                    //$waitingText = implode('', array_filter(explode(';', $queryParams)));
-                    //$waitingText = $newParamString . ' $ ' . $queryParams;
                     $queryParams = str_replace('?params=', '', $newParamString);
                     $waitingText = str_replace(';', '', $queryParams);
                 } else {
@@ -140,7 +137,7 @@ class BotController extends Controller
                     'reply_markup' => $keyboard
                 ]);
                 Telegram::sendMessage([
-                    'text' => $newParamString,
+                    'text' => 'Para,s:' . $newParamString,
                     'chat_id' => $query->getFrom()->getId()
                 ]);
             } else {
