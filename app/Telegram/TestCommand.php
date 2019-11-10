@@ -36,7 +36,7 @@ class TestCommand extends Command
         $keyboard = CalculatorService::drawCalculator('Start typing', '');
 
         $message = $this->replyWithMessage([
-            'text' => 'Ok. It is my first telegram bot. Try free for 30 days:)',
+            'text' => trans('calculator.main_text'),
             'reply_markup' => $keyboard
         ]);
     }
