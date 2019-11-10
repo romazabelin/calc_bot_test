@@ -5,7 +5,7 @@ use Telegram;
 
 class CalculatorService
 {
-    public static function drawCalculator($resultText, $paramString)
+    public static function drawCalculator(string $resultText, string $paramString)
     {
         return Keyboard::make()
             ->inline()
