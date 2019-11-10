@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Telegram\Bot\Keyboard\Keyboard;
@@ -13,85 +12,7 @@ class BotController extends Controller
 
     public function webhookHandler()
     {
-        $update = Telegram::getWebhookUpdates();
-        $query = $update->getCallbackQuery();
-
-        if ($update->isType('callback_query') && $query->getId()) {
-            if(strpos($query->getData(), 'key_result') === false) {
-                $newParamString = '';
-                $pos =  strpos($query->getData(), '?params');
-
-                if (strpos($query->getData(), 'key_calc_result') !== false) {
-                    if ($pos !== false) {
-                        $paramsString = substr($query->getData(), $pos, strlen($query->getData()) - 1);
-                        $queryParams = str_replace('?params=', '', $paramsString);
-                        $elements = array_filter(explode(';', $queryParams));
-
-                        if (count($elements) == 3) {
-                            $resOperation = eval("return(" . implode('', $elements) . ");");
-                            $newParamString .= '?params=' . $resOperation . ';';
-                        } else {
-                            $newParamString = $paramsString;
-                        }
-                    }
-                } else if (strpos($query->getData(), 'key_clear') !== false) {
-                    $newParamString = '';
-                } else {
-                    if ($pos !== false) {
-                        $paramsString = substr($query->getData(), $pos, strlen($query->getData()) - 1);
-                        $queryParams = str_replace('?params=', '', $paramsString);
-                        $elements = array_filter(explode(';', $queryParams));
-                        $newKey = str_replace('key_', '', substr($query->getData(), 0, $pos));
-
-                        if ($newKey == '+' || $newKey == '-' || $newKey == '*' || $newKey == '/') {
-                            if (count($elements) == 3) {
-                                $resOperation = eval("return(" . implode('', $elements) . ");");
-                                $elements = [];
-                                $elements[] = $resOperation;
-                                $elements[] = $newKey;
-                            } else {
-                                if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
-                                    $elements[] = $newKey;
-                                }
-                            }
-                        } else {
-                            if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
-                                $elements[count($elements) - 1] = $elements[count($elements) - 1] . $newKey;
-                            } else {
-                                $elements[] = $newKey;
-                            }
-                        }
-
-                        $newParamString = (count($elements) == 1) ? $elements[count($elements) - 1] . ';' : implode(";", $elements);
-                        $newParamString = '?params=' . $newParamString;
-                    } else {
-                        $newKey = str_replace('key_', '', $query->getData());
-                        if ($newKey != '+' && $newKey != '-' && $newKey != '*' && $newKey != '/') {
-                            $newParamString .= '?params=' . $newKey . ';';
-                        }
-                    }
-                }
-
-                $posNewParams = strpos($newParamString, '?params');
-                if ($posNewParams !== false) {
-                    $queryParams = str_replace('?params=', '', $newParamString);
-                    $waitingText = str_replace(';', '', $queryParams);
-                } else {
-                    $waitingText = 'Start typing';
-                }
-
-                $keyboard = CalculatorService::drawCalculator($waitingText, $newParamString);
-
-                Telegram::editMessageText([
-                    'message_id' => $query->getMessage()->getMessageId(),
-                    'text' => 'Ok. It is my first telegram bot. Try free for 30 days:)',
-                    'chat_id' => $query->getFrom()->getId(),
-                    'reply_markup' => $keyboard
-                ]);
-            } else {
-            }
-        } else {
-            Telegram::commandsHandler(true);
-        }
+        $calculatorService = new CalculatorService();
+        $calculatorService->handleCalculatorAction();
     }
 }
