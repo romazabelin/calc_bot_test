@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Telegram\Bot\Keyboard\Keyboard;
 use Telegram;
+use App\Services\CalculatorService;
 
 class BotController extends Controller
 {
@@ -79,32 +80,7 @@ class BotController extends Controller
                     $waitingText = 'Start typing';
                 }
 
-                $keyboard = Keyboard::make()
-                    ->inline()
-                    ->row(
-                        Keyboard::inlineButton(['text' => '1', 'callback_data' => 'key_1' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '2', 'callback_data' => 'key_2' . $newParamString ]),
-                        Keyboard::inlineButton(['text' => '3', 'callback_data' => 'key_3' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '+', 'callback_data' => 'key_+' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '-', 'callback_data' => 'key_-' . $newParamString])
-                    )
-                    ->row(
-                        Keyboard::inlineButton(['text' => '4', 'callback_data' => 'key_4' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '5', 'callback_data' => 'key_5' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '6', 'callback_data' => 'key_6' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '*', 'callback_data' => 'key_*' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '/', 'callback_data' => 'key_/' . $newParamString])
-                    )
-                    ->row(
-                        Keyboard::inlineButton(['text' => '7', 'callback_data' => 'key_7' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '8', 'callback_data' => 'key_8' . $newParamString]),
-                        Keyboard::inlineButton(['text' => '9', 'callback_data' => 'key_9' . $newParamString]),
-                        Keyboard::inlineButton(['text' => 'C', 'callback_data' => 'key_clear']),
-                        Keyboard::inlineButton(['text' => '=', 'callback_data' => 'key_calc_result' . $newParamString])
-                    )
-                    ->row(
-                        Keyboard::inlineButton(['text' => $waitingText, 'callback_data' => 'key_result'])
-                    );
+                $keyboard = CalculatorService::drawCalculator($waitingText, $newParamString);
 
                 Telegram::editMessageText([
                     'message_id' => $query->getMessage()->getMessageId(),
