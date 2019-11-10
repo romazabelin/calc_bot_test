@@ -33,7 +33,7 @@ class TestCommand extends Command
     {
         //$update->getMessage()->getChat()->getId()
         $update = $this->getUpdate();
-        $keyboard = CalculatorService::drawCalculator('Start typing', '');
+        $keyboard = CalculatorService::drawCalculator(trans('calculator.result_text'), '');
 
         $message = $this->replyWithMessage([
             'text' => trans('calculator.main_text'),

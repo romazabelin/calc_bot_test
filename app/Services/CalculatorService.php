@@ -101,14 +101,14 @@ class CalculatorService
                     $queryParams = str_replace('?params=', '', $newParamString);
                     $waitingText = str_replace(';', '', $queryParams);
                 } else {
-                    $waitingText = 'Start typing';
+                    $waitingText = trans('calculator.result_text');
                 }
 
                 $keyboard = self::drawCalculator($waitingText, $newParamString);
 
                 Telegram::editMessageText([
                     'message_id' => $query->getMessage()->getMessageId(),
-                    'text' => 'Ok. It is my first telegram bot. Try free for 30 days:)',
+                    'text' => trans('calculator.main_text'),
                     'chat_id' => $query->getFrom()->getId(),
                     'reply_markup' => $keyboard
                 ]);
