@@ -40,7 +40,7 @@ return [
     */
     'bots' => [
         'common' => [
-            'username'  => 'calculator_laravel_bot',
+            'username'  => 'RomaTestLaravelBot',
             'token' => env('TELEGRAM_BOT_TOKEN', '940388202:AAGsF3Icxhu-GetrXAuQBGfgV__F0zGkThk'),
             'commands' => [
 //                Acme\Project\Commands\MyTelegramBot\BotCommand::class

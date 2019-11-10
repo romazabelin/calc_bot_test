@@ -16,57 +16,31 @@ class BotController extends Controller
         $query = $update->getCallbackQuery();
 
         if ($update->isType('callback_query') && $query->getId()) {
-            $callbackData = $query->getData();
-//            Telegram::answerCallbackQuery([
-//                'text' => $query->getData() . ' ' . $query->getFrom()->getId() . ' ' . $query->getId(),
-//                'callback_query_id' => $query->getId(),
-//                'show_alert' => true
-//            ]);
-
-            if(strpos($callbackData, 'key_result') === false) {
+            if(strpos($query->getData(), 'key_result') === false) {
                 $newParamString = '';
-                $pos =  strpos($callbackData, '?params');
+                $pos =  strpos($query->getData(), '?params');
 
-                if (strpos($callbackData, 'key_calc_result') !== false) {
+                if (strpos($query->getData(), 'key_calc_result') !== false) {
                     if ($pos !== false) {
-                        $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
+                        $paramsString = substr($query->getData(), $pos, strlen($query->getData()) - 1);
                         $queryParams = str_replace('?params=', '', $paramsString);
                         $elements = array_filter(explode(';', $queryParams));
 
                         if (count($elements) == 3) {
                             $resOperation = eval("return(" . implode('', $elements) . ");");
                             $newParamString .= '?params=' . $resOperation . ';';
-
-//                            if(preg_match('/(\d+)(?:\s*)([\+\-\*\/])(?:\s*)(\d+)/', $execOperation, $matches) !== FALSE){
-//                                $operator = $matches[2];
-//
-//                                switch($operator) {
-//                                    case '+':
-//                                        $resOperation = $matches[1] + $matches[3];
-//                                        break;
-//                                    case '-':
-//                                        $resOperation = $matches[1] - $matches[3];
-//                                        break;
-//                                    case '*':
-//                                        $resOperation = $matches[1] * $matches[3];
-//                                        break;
-//                                    case '/':
-//                                        $resOperation = $matches[1] / $matches[3];
-//                                        break;
-//                                }
-//                            }
                         } else {
                             $newParamString = $paramsString;
                         }
                     }
-                } else if (strpos($callbackData, 'key_clear') !== false) {
+                } else if (strpos($query->getData(), 'key_clear') !== false) {
                     $newParamString = '';
                 } else {
                     if ($pos !== false) {
-                        $paramsString = substr($callbackData, $pos, strlen($callbackData) - 1);
+                        $paramsString = substr($query->getData(), $pos, strlen($query->getData()) - 1);
                         $queryParams = str_replace('?params=', '', $paramsString);
                         $elements = array_filter(explode(';', $queryParams));
-                        $newKey = str_replace('key_', '', substr($callbackData, 0, $pos));
+                        $newKey = str_replace('key_', '', substr($query->getData(), 0, $pos));
 
                         if ($newKey == '+' || $newKey == '-' || $newKey == '*' || $newKey == '/') {
                             if (count($elements) == 3) {
@@ -74,25 +48,6 @@ class BotController extends Controller
                                 $elements = [];
                                 $elements[] = $resOperation;
                                 $elements[] = $newKey;
-
-//                                if(preg_match('/(\d+)(?:\s*)([\+\-\*\/])(?:\s*)(\d+)/', $execOperation, $matches) !== FALSE){
-//                                    $operator = $matches[2];
-//
-//                                    switch($operator) {
-//                                        case '+':
-//                                            $resOperation = $matches[1] + $matches[3];
-//                                            break;
-//                                        case '-':
-//                                            $resOperation = $matches[1] - $matches[3];
-//                                            break;
-//                                        case '*':
-//                                            $resOperation = $matches[1] * $matches[3];
-//                                            break;
-//                                        case '/':
-//                                            $resOperation = $matches[1] / $matches[3];
-//                                            break;
-//                                    }
-//                                }
                             } else {
                                 if (end($elements) != '+' && end($elements) != '-' && end($elements) != '*' && end($elements) != '/') {
                                     $elements[] = $newKey;
@@ -106,14 +61,10 @@ class BotController extends Controller
                             }
                         }
 
-                        if (count($elements) == 1) {
-                            $newParamString = $elements[count($elements) - 1] . ';';
-                        } else {
-                            $newParamString = implode(";", $elements);
-                        }
+                        $newParamString = (count($elements) == 1) ? $elements[count($elements) - 1] . ';' : implode(";", $elements);
                         $newParamString = '?params=' . $newParamString;
                     } else {
-                        $newKey = str_replace('key_', '', $callbackData);
+                        $newKey = str_replace('key_', '', $query->getData());
                         if ($newKey != '+' && $newKey != '-' && $newKey != '*' && $newKey != '/') {
                             $newParamString .= '?params=' . $newKey . ';';
                         }
@@ -161,10 +112,6 @@ class BotController extends Controller
                     'chat_id' => $query->getFrom()->getId(),
                     'reply_markup' => $keyboard
                 ]);
-//                Telegram::sendMessage([
-//                    'text' => 'Para,s:' . $newParamString,
-//                    'chat_id' => $query->getFrom()->getId()
-//                ]);
             } else {
             }
         } else {

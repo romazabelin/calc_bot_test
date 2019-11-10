@@ -31,6 +31,7 @@ class TestCommand extends Command
     public function handle($arguments)
     {
         $update = $this->getUpdate();
+        //$update->getMessage()->getChat()->getId()
 
         $keyboard = Keyboard::make()
             ->inline()
@@ -63,9 +64,5 @@ class TestCommand extends Command
             'text' => 'Ok. It is my first telegram bot. Try free for 30 days:)',
             'reply_markup' => $keyboard
         ]);
-
-        //$update->getMessage()->getChat()->getId()
-        //        $this->replyWithMessage(['text' => 'Hi: ' . $update->getMessage()->getFrom()->getFirstName()]);
-        //        $update = $this->getUpdate();
     }
 }
